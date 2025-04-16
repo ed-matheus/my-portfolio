@@ -7,22 +7,55 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
 	return (
-		<div className="items-center justify-items-center">
-			<section className="flex justify-center items-center w-full px-5 py-12 bg-black-400">
-				<div className="w-[60%]">
-					<h2 className="text-blue-500 mb-5 text-2xl">
+		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
+			<section className="flex justify-center items-center w-full px-50 py-18 bg-black-400 gap-18">
+				<div>
+					<h2 className="text-blue-500 mb-5 text-2xl font-bold">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
 						Front-end
 					</h2>
 
-					<p className="text-xl">
+					<p className="text-xl mb-5">
 						Transformo ideias em experiências digitais modernas, funcionais e
 						intuitivas. <br />
 						Este é o meu portfólio, onde compartilho meus projetos, habilidades
 						e visão criativa.
 					</p>
 
-          {/* Competências */}
+					{/* Redes Sociais */}
+					<div className="flex items-center gap-4">
+						<a
+							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
+							target="__blank"
+						>
+							<button
+								type="button"
+								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
+							>
+								<FontAwesomeIcon icon={faLinkedinIn} className="w-[1.3rem]" />
+							</button>
+						</a>
+
+						<a href="https://github.com/ed-matheus" target="__blank">
+							<button
+								type="button"
+								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
+							>
+								<FontAwesomeIcon icon={faGithub} className="w-[1.3rem]" />
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<img src="/me.png" alt="" className="w-[25rem] h-[25rem]" />
+			</section>
+
+			{/* Seção Sobre mim */}
+			<section className="flex justify-center items-center w-full px-50 py-18">
+				<div className="">
+					<h2 className="text-blue-500 mb-5 text-2xl font-bold">Sobre mim</h2>
+
+					{/* Competências */}
 					<ul className="flex gap-18 my-6">
 						<li className="flex items-center text-[1.2rem]">
 							<FontAwesomeIcon
@@ -47,36 +80,44 @@ export default function Home() {
 						</li>
 					</ul>
 
-					{/* Redes Sociais */}
-					<div className="flex items-center gap-4">
-						<a
-							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
-							target="__blank"
-						>
-							<button
-								type="button"
-								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
-							>
-								<FontAwesomeIcon icon={faLinkedinIn} className="w-[1.3rem]" />
-							</button>
-						</a>
+					<p className="text-lg">
+						Sou tecnólogo em Design de Mídias Digitais formado pela Fatec
+						Barueri, com experiência em criação de sites institucionais, landing
+						pages e e-commerces. Tenho conhecimentos em WordPress, React e
+						ferramentas de design como Figma, Photoshop e Illustrator.
+					</p>
 
-						<a
-							href="https://github.com/ed-matheus"
-							target="__blank"
+					<br />
+
+					<p className="text-lg mb-5">
+						Gosto de unir criatividade e organização para entregar soluções
+						visuais modernas, funcionais e com foco em resultados. Também tenho
+						boa familiaridade com tecnologias web, versionamento com Git e
+						noções de redes e suporte técnico. Sou comunicativo, proativo e
+						comprometido com a entrega de um trabalho bem feito.
+					</p>
+
+					<a href="/sobre">
+						<button
+							type="button"
+							className="bg-blue-500 hover:bg-blue-300 hover:cursor-pointer px-5 py-2 rounded"
 						>
-							<button
-								type="button"
-								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
-							>
-								<FontAwesomeIcon icon={faGithub} className="w-[1.3rem]" />
-							</button>
-						</a>
-					</div>
+							Ver mais
+						</button>
+					</a>
 				</div>
-
-				<img src="/me.png" alt="" className="w-[25rem] h-[25rem]" />
 			</section>
-		</div>
+
+			{/* Seção Habilidades */}
+			<section className="flex justify-center items-center w-full px-50 py-20 bg-black-400">
+				<img src="/dev-vector.png" alt="" className="w-[23rem] h-[18rem]" />
+
+        <div className="flex-col">
+          <div className="bg-yellow-300">
+            teste
+          </div>
+        </div>
+			</section>
+		</main>
 	);
 }
