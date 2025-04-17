@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importando 
 
 // Ícones do FontAwesome
 import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faCss3, faGithub, faHtml5, faJs, faLinkedinIn, faReact, faWordpress } from "@fortawesome/free-brands-svg-icons";
+
+// Componentes
+import Skill from "@/components/Skill";
 
 export default function Home() {
 	return (
@@ -109,14 +112,17 @@ export default function Home() {
 			</section>
 
 			{/* Seção Habilidades */}
-			<section className="flex justify-center items-center w-full px-50 py-20 bg-black-400">
+			<section className="flex justify-center items-center w-full px-50 py-20 gap-20 bg-black-400">
 				<img src="/dev-vector.png" alt="" className="w-[23rem] h-[18rem]" />
 
-        <div className="flex-col">
-          <div className="bg-yellow-300">
-            teste
-          </div>
-        </div>
+				<div className="w-96">
+					<h2 className="text-blue-500 mb-5 text-2xl font-bold">Habilidades</h2>
+					<Skill name={"HTML5"} iconName={faHtml5} level={'85'} bgColor={"bg-red-800"} />
+					<Skill name={"CSS3"} iconName={faCss3} level={'80'} bgColor={"bg-blue-400"} />
+					<Skill name={"JavaScript"} iconName={faJs} level={'60'} bgColor={"bg-yellow-400"} />
+					<Skill name={"React"} iconName={faReact} level={'60'} bgColor={"bg-blue-500"} />
+					<Skill name={"WordPress"} iconName={faWordpress} level={'85'} bgColor={"bg-purple-800"} />
+				</div>
 			</section>
 		</main>
 	);
