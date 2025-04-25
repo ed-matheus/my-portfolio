@@ -22,12 +22,13 @@ import {
 // Componentes
 import Skill from "@/components/Skill";
 import Button from "@/components/Button";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
-			<section className="flex justify-center items-center w-full px-50 py-18 bg-black-400 gap-18">
+			<section className="flex justify-center items-center w-full px-50 py-18 bg-dark-400 gap-18">
 				<div>
 					<h2 className="text-blue-500 mb-5 text-2xl font-bold">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
@@ -123,7 +124,7 @@ export default function Home() {
 			</section>
 
 			{/* Seção Habilidades */}
-			<section className="flex justify-center items-center w-full px-50 py-20 gap-20 bg-black-400">
+			<section className="flex justify-center items-center w-full px-50 py-20 gap-20 bg-dark-400">
 				<img src="/dev-vector.png" alt="" className="w-[23rem] h-[18rem]" />
 
 				<div className="w-96">
@@ -162,8 +163,48 @@ export default function Home() {
 			</section>
 
 			{/* Seção de Projetos */}
-			<section className="flex justify-center items-center w-full px-50 py-20 gap-20">
-				text
+			<section className="flex flex-col justify-center items-center w-full px-50 py-20 gap-20">
+				<div className="flex justify-center items-center gap-20">
+					<ProjectCard
+						name={"Huddle Landing Page"}
+						desc={"descrição do projeto"}
+						skills={[
+							{ id: 0, name: "HTML" },
+							{ id: 1, name: "CSS" },
+						]}
+						img={"huddle.png"}
+						link={"https://huddle-ed.netlify.app/"}
+					/>
+
+					<ProjectCard
+						name={"Projeto Tânia Neves"}
+						desc={"descrição do projeto"}
+						skills={[
+							{ id: 0, name: "WordPress" },
+							{ id: 1, name: "Elementor" },
+							{ id: 2, name: "WooCommerce" },
+						]}
+						img={"tania.png"}
+						link={"https://tanianeves.com.br/"}
+					/>
+
+					<ProjectCard
+						name={"Advice Generator"}
+						desc={"descrição do projeto"}
+						skills={[
+							{ id: 0, name: "HTML" },
+							{ id: 1, name: "CSS" },
+							{ id: 2, name: "React" },
+						]}
+						img={"advice-friend.png"}
+						link={"https://advice-friend.netlify.app/"}
+						codeLink={"https://github.com/ed-matheus/react-advice-generator"}
+					/>
+				</div>
+
+				<Link href={"/projetos"}>
+					<Button text={"Veja mais"} />
+				</Link>
 			</section>
 		</main>
 	);

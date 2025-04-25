@@ -1,4 +1,4 @@
-const Button = ({ text, iconName="" }) => {
+const Button = ({ text }) => {
   return (
     <button
       type="button"

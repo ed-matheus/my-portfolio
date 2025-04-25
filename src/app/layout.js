@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.variable} antialiased bg-black-500`}
+        className={`${spaceMono.variable} antialiased bg-dark-500`}
       >
         <Header />
         {children}
