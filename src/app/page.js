@@ -2,15 +2,31 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importando FontAwesome
 
 // Ícones do FontAwesome
-import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faCss3, faGithub, faHtml5, faJs, faLinkedinIn, faReact, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import {
+	faCode,
+	faDownload,
+	faPenRuler,
+	faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
+	faCss3,
+	faGithub,
+	faHtml5,
+	faJs,
+	faLinkedinIn,
+	faReact,
+	faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
 
 // Componentes
 import Skill from "@/components/Skill";
+import Button from "@/components/Button";
 
 export default function Home() {
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
+			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
 			<section className="flex justify-center items-center w-full px-50 py-18 bg-black-400 gap-18">
 				<div>
 					<h2 className="text-blue-500 mb-5 text-2xl font-bold">
@@ -100,13 +116,8 @@ export default function Home() {
 						comprometido com a entrega de um trabalho bem feito.
 					</p>
 
-					<a href="/sobre">
-						<button
-							type="button"
-							className="bg-blue-500 hover:bg-blue-300 hover:cursor-pointer px-5 py-2 rounded"
-						>
-							Ver mais
-						</button>
+					<a href="/sobre" className="me-5">
+						<Button text={"Ver mais"} />
 					</a>
 				</div>
 			</section>
@@ -117,12 +128,42 @@ export default function Home() {
 
 				<div className="w-96">
 					<h2 className="text-blue-500 mb-5 text-2xl font-bold">Habilidades</h2>
-					<Skill name={"HTML5"} iconName={faHtml5} level={'85'} bgColor={"bg-red-800"} />
-					<Skill name={"CSS3"} iconName={faCss3} level={'80'} bgColor={"bg-blue-400"} />
-					<Skill name={"JavaScript"} iconName={faJs} level={'60'} bgColor={"bg-yellow-400"} />
-					<Skill name={"React"} iconName={faReact} level={'60'} bgColor={"bg-blue-500"} />
-					<Skill name={"WordPress"} iconName={faWordpress} level={'85'} bgColor={"bg-purple-800"} />
+					<Skill
+						name={"HTML5"}
+						iconName={faHtml5}
+						level={"85"}
+						bgColor={"bg-red-800"}
+					/>
+					<Skill
+						name={"CSS3"}
+						iconName={faCss3}
+						level={"80"}
+						bgColor={"bg-blue-400"}
+					/>
+					<Skill
+						name={"JavaScript"}
+						iconName={faJs}
+						level={"60"}
+						bgColor={"bg-yellow-400"}
+					/>
+					<Skill
+						name={"React"}
+						iconName={faReact}
+						level={"60"}
+						bgColor={"bg-blue-500"}
+					/>
+					<Skill
+						name={"WordPress"}
+						iconName={faWordpress}
+						level={"85"}
+						bgColor={"bg-purple-800"}
+					/>
 				</div>
+			</section>
+
+			{/* Seção de Projetos */}
+			<section className="flex justify-center items-center w-full px-50 py-20 gap-20">
+				text
 			</section>
 		</main>
 	);

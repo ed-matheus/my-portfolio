@@ -7,11 +7,10 @@ const Skill = ({ name, level, bgColor, iconName }) => {
       <h2 className="text-white text-md mb-1.5 flex items-center gap-2">
         {name}
       </h2>
-      <div className="w-full rounded-full h-4 flex items-center gap-2">
-        <FontAwesomeIcon icon={iconName} className="w-[1rem]" />
-        <div
-          className={`${bgColor} h-4 rounded-full animate-fill w-[${level}%]`}
-        />
+      <div className="flex items-center gap-3">
+        <div className="h-4 rounded-full overflow-hidden flex-1 bg-gray-800">
+          <div className={`h-full ${bgColor}`} style={{ width: `${level}%` }} />
+        </div>
         <span>{level}%</span>
       </div>
     </div>
