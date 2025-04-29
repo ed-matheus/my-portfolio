@@ -4,8 +4,8 @@ import React from "react";
 const Header = () => {
   // Lista com path e nome de cada item do menu (navegação)
   const menuItems = [
-    { id: 0, path: "/sobre", name: "Sobre" },
-    { id: 1, path: "/habilidades", name: "Habilidades" },
+    { id: 0, path: "/", name: "Home" },
+    { id: 1, path: "/sobre", name: "Sobre" },
     { id: 2, path: "/projetos", name: "Projetos" },
     { id: 3, path: "/contato", name: "Contato" },
   ];
