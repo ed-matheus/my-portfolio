@@ -174,6 +174,7 @@ export default function Home() {
 						]}
 						img={"huddle.png"}
 						link={"https://huddle-ed.netlify.app/"}
+						codeLink={"https://github.com/ed-matheus/huddle-landingpage"}
 					/>
 
 					<ProjectCard
