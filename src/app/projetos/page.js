@@ -11,7 +11,7 @@ const Projetos = () => {
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
-			<section className="px-50 py-10 bg-dark-400 gap-18">
+			<section className="px-50 py-15 bg-dark-400 gap-18 text-center">
 				<h1 className="text-3xl font-bold text-blue-500 mb-4">Projetos</h1>
 				<p className="text-lg text-gray-300">
 					Uma seleção dos meus trabalhos com foco em design funcional e boas
