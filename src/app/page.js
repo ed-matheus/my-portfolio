@@ -24,6 +24,9 @@ import Skill from "@/components/Skill";
 import Button from "@/components/Button";
 import ProjectCard from "@/components/ProjectCard";
 
+// Arquivo JSON com dados dos meus projetos
+import projects from "@/data/my-projects.json";
+
 export default function Home() {
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
@@ -164,43 +167,19 @@ export default function Home() {
 
 			{/* Seção de Projetos */}
 			<section className="flex flex-col justify-center items-center w-full px-50 py-20 gap-20">
-				<div className="flex justify-center items-center gap-20">
-					<ProjectCard
-						name={"Huddle Landing Page"}
-						desc={"descrição do projeto"}
-						skills={[
-							{ id: 0, name: "HTML" },
-							{ id: 1, name: "CSS" },
-						]}
-						img={"huddle.png"}
-						link={"https://huddle-ed.netlify.app/"}
-						codeLink={"https://github.com/ed-matheus/huddle-landingpage"}
-					/>
-
-					<ProjectCard
-						name={"Projeto Tânia Neves"}
-						desc={"descrição do projeto"}
-						skills={[
-							{ id: 0, name: "WordPress" },
-							{ id: 1, name: "Elementor" },
-							{ id: 2, name: "WooCommerce" },
-						]}
-						img={"tania.png"}
-						link={"https://tanianeves.com.br/"}
-					/>
-
-					<ProjectCard
-						name={"Advice Generator"}
-						desc={"descrição do projeto"}
-						skills={[
-							{ id: 0, name: "HTML" },
-							{ id: 1, name: "CSS" },
-							{ id: 2, name: "React" },
-						]}
-						img={"advice-friend.png"}
-						link={"https://advice-friend.netlify.app/"}
-						codeLink={"https://github.com/ed-matheus/react-advice-generator"}
-					/>
+				<h2 className="text-blue-500 text-2xl font-bold">Projetos</h2>
+				<div className="grid grid-cols-3 grid-rows-0 gap-20">
+					{projects.slice(0, 3).map((project) => (
+						<ProjectCard
+							key={project.name}
+							name={project.name}
+							desc={project.desc}
+							skills={project.skills}
+							img={project.img}
+							link={project.link}
+							codeLink={project.codeLink}
+						/>
+					))}
 				</div>
 
 				<Link href={"/projetos"}>

@@ -4,7 +4,7 @@ import { faPenRuler, faUsers, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Sobre = () => {
 	return (
-		<div className="text-white">
+		<div className="w-full text-white">
 			{/* SEÇÃO: Quem sou eu */}
 			<section className="flex flex-col justify-center items-start w-full px-50 py-18">
 				<h2 className="text-blue-500 mb-4 text-2xl font-bold">Quem sou eu</h2>
