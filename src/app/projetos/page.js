@@ -1,10 +1,13 @@
-import ProjectCard from "@/components/ProjectCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Arquivo JSON com dados dos meus projetos
 import projects from "@/data/my-projects.json";
 
-const Projetos = () => {
+// Componentes
+import ProjectCard from "@/components/ProjectCard";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
+const Projetos = () => {
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
@@ -17,7 +20,7 @@ const Projetos = () => {
 			</section>
 
 			{/* Grid de Projetos */}
-			<div className="max-w-[75%] mx-auto px-4">
+			<div className="max-w-[75%] mx-auto px-4 py-10">
 				<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12">
 					{projects.map((project) => (
 						<ProjectCard
@@ -31,18 +34,24 @@ const Projetos = () => {
 						/>
 					))}
 				</section>
-			</div>
 
-			{/* Call to Action */}
-			<section className="text-center mt-12">
-				<p className="text-xl mb-4">Gostou do que viu?</p>
-				<a
-					href="/contato"
-					className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
-				>
-					Entre em contato
-				</a>
-			</section>
+				{/* Call to Action */}
+				<div className="flex flex-col items-center justify-center mt-10">
+					<h2 className="text-xl mb-3">Gostou do que viu?</h2>
+					<button
+						type="button"
+						className="bg-green-600 px-4 py-2 rounded"
+					>
+						<a
+							href="/#"
+							className="text-white flex items-center gap-2"
+						>
+							<span className="font-bold">Entre em contato</span>
+							<FontAwesomeIcon icon={faWhatsapp} className="w-[1.2rem]" />
+						</a>
+					</button>
+				</div>
+			</div>
 		</div>
 	);
 };
