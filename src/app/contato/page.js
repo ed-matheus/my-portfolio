@@ -38,7 +38,7 @@ const Contato = () => {
 					/>
 					<button
 						type="submit"
-						className="bg-blue-300 hover:bg-primary/80 text-white py-2 px-6 rounded w-fit mx-auto"
+						className="bg-green-500 hover:bg-green-400 hover:cursor-pointer text-white py-2 px-6 rounded w-fit mx-auto"
 					>
 						Enviar mensagem
 					</button>
@@ -51,14 +51,14 @@ const Contato = () => {
 							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
 							target="_blank"
 							rel="noreferrer"
-							className="hover:text-blue-500 flex items-center gap-2"
+							className="hover:text-green-500 flex items-center gap-2"
 						>
 							<FontAwesomeIcon icon={faLinkedin} className="w-[1.2rem]" />
 							LinkedIn
 						</a>
 						<a
 							href="mailto:edsonmatheus02@hotmail.com"
-							className="hover:text-blue-500 flex items-center gap-2"
+							className="hover:text-green-500 flex items-center gap-2"
 						>
 							<FontAwesomeIcon icon={faEnvelope} className="w-[1.2rem]" />
 							E-mail
@@ -67,7 +67,7 @@ const Contato = () => {
 							href="https://github.com/ed-matheus"
 							target="_blank"
 							rel="noreferrer"
-							className="hover:text-blue-500 flex items-center gap-2"
+							className="hover:text-green-500 flex items-center gap-2"
 						>
 							<FontAwesomeIcon icon={faGithub} className="w-[1.2rem]" />
 							GitHub

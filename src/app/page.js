@@ -31,9 +31,9 @@ export default function Home() {
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
-			<section className="flex justify-center items-center w-full px-50 py-18 bg-dark-400 gap-18">
+			<section className="flex justify-center items-center w-full px-50 py-18 bg-dark gap-18">
 				<div>
-					<h2 className="text-blue-500 mb-5 text-2xl font-bold">
+					<h2 className="mb-5 text-2xl font-bold">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
 						Front-end
 					</h2>
@@ -53,7 +53,7 @@ export default function Home() {
 						>
 							<button
 								type="button"
-								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
+								className="bg-green-500 p-2 rounded-full hover:cursor-pointer hover:bg-green-400"
 							>
 								<FontAwesomeIcon icon={faLinkedinIn} className="w-[1.3rem]" />
 							</button>
@@ -62,7 +62,7 @@ export default function Home() {
 						<a href="https://github.com/ed-matheus" target="__blank">
 							<button
 								type="button"
-								className="bg-blue-500 p-2 rounded-full hover:cursor-pointer hover:bg-blue-300"
+								className="bg-green-500 p-2 rounded-full hover:cursor-pointer hover:bg-green-400"
 							>
 								<FontAwesomeIcon icon={faGithub} className="w-[1.3rem]" />
 							</button>
@@ -76,28 +76,28 @@ export default function Home() {
 			{/* Seção Sobre mim */}
 			<section className="flex justify-center items-center w-full px-50 py-18">
 				<div className="">
-					<h2 className="text-blue-500 mb-5 text-2xl font-bold">Sobre mim</h2>
+					<h2 className="mb-5 text-2xl font-bold">Sobre mim</h2>
 
 					{/* Competências */}
 					<ul className="flex gap-18 my-6">
 						<li className="flex items-center text-[1.2rem]">
 							<FontAwesomeIcon
 								icon={faPenRuler}
-								className="me-2 w-[1.3rem] text-blue-500"
+								className="me-2 w-[1.3rem] text-green-500"
 							/>
 							Web Design
 						</li>
 						<li className="flex items-center text-[1.2rem]">
 							<FontAwesomeIcon
 								icon={faUsers}
-								className="me-2 w-[1.3rem] text-blue-500"
+								className="me-2 w-[1.3rem] text-green-500"
 							/>
 							UX/UI Design
 						</li>
 						<li className="flex items-center text-[1.2rem]">
 							<FontAwesomeIcon
 								icon={faCode}
-								className="me-2 w-[1.3rem] text-blue-500"
+								className="me-2 w-[1.3rem] text-green-500"
 							/>
 							Desenvolvimento Front-end
 						</li>
@@ -127,11 +127,11 @@ export default function Home() {
 			</section>
 
 			{/* Seção Habilidades */}
-			<section className="flex justify-center items-center w-full px-50 py-20 gap-20 bg-dark-400">
+			<section className="flex justify-center items-center w-full px-50 py-20 gap-20 bg-dark">
 				<img src="/dev-vector.png" alt="" className="w-[23rem] h-[18rem]" />
 
 				<div className="w-96">
-					<h2 className="text-blue-500 mb-5 text-2xl font-bold">Habilidades</h2>
+					<h2 className="mb-5 text-2xl font-bold">Habilidades</h2>
 					<Skill
 						name={"HTML5"}
 						iconName={faHtml5}
@@ -167,7 +167,7 @@ export default function Home() {
 
 			{/* Seção de Projetos */}
 			<section className="flex flex-col justify-center items-center w-full px-50 py-20 gap-20">
-				<h2 className="text-blue-500 text-2xl font-bold">Projetos</h2>
+				<h2 className="text-2xl font-bold">Projetos</h2>
 				<div className="grid grid-cols-3 grid-rows-0 gap-20">
 					{projects.slice(0, 3).map((project) => (
 						<ProjectCard

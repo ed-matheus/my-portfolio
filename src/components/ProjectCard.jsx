@@ -21,7 +21,7 @@ const ProjectCard = ({ img, name, desc, skills, link, codeLink }) => {
           {skills.map((skill) => (
             <li
               key={skill.id}
-              className="bg-blue-500 px-2 py-1 rounded-full text-xs font-medium"
+              className="bg-green-400 text-dark font-semibold px-2 py-1 rounded-full text-xs"
             >
               {skill.name}
             </li>

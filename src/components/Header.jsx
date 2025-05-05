@@ -11,8 +11,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center px-18 py-7 text-light bg-black-400 border-b-2 border-blue-500">
-      <Link href={"/"} className="text-blue-500 text-xl font-black">
+    <header className="flex justify-between items-center px-18 py-7 text-light bg-dark border-b-2 border-green-500">
+      <Link href={"/"} className="text-green-500 text-xl font-black">
         Matheus Costa
       </Link>
 
@@ -20,7 +20,7 @@ const Header = () => {
         <ul className="flex gap-15 font-black">
           {menuItems.map((item) => (
             <li key={item.id}>
-              <Link href={`${item.path}`} className="hover:text-blue-500">
+              <Link href={`${item.path}`} className="hover:text-green-500">
                 {item.name}
               </Link>
             </li>

@@ -6,14 +6,18 @@
 }
 
 @theme {
-  --color-blue-500: #11bcd6;
-  --color-blue-300: #11a1b8;
-  --color-dark-500: #0f0f0f;
-  --color-dark-400: #141414;
+  --color-dark: #181d26;
+  --color-green-500: #149c9c;
+  --color-green-400: #6cb8b8;
   --color-light: #f5f5f5;
 }
 
 body {
   font-size: 16px;
   color: var(--color-light);
+  background-color: var(--color-dark)
+}
+
+h1, h2 {
+  color: var(--color-green-500)
 }
