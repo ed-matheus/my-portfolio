@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const ProjectCard = ({ img, name, desc, skills, link, codeLink }) => {
   return (
-    <div className="w-[400px] p-5 rounded-[10px] bg-dark-400 shadow-xl/30 shadow-blue-300">
+    <div className="w-[400px] p-5 rounded-[10px] bg-dark-400 shadow-xl/15 shadow-green-500">
       <Image
         src={`/project-images/${img}`}
         alt={`Print do projeto ${name}`}

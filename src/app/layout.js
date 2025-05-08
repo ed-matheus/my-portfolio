@@ -1,11 +1,20 @@
-import { Space_Mono } from "next/font/google";
+import { Sora, Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const spaceMono = Space_Mono({
-	variable: "--font-space-mono",
-	weight: ["400", "700"],
+// Fonte para título
+const sora = Sora({
+	variable: "--font-sora",
+	weight: ["600", "700"],
+	subsets: ["latin"],
+	display: "swap",
+});
+
+// Font para texto
+const urbanist = Urbanist({
+	variable: "--font-urbanist",
+	weight: ["300", "400"],
 	subsets: ["latin"],
 	display: "swap",
 });
@@ -18,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${spaceMono.variable} antialiased bg-dark-500`}>
+			<body className={`${sora.variable} ${urbanist.variable} antialiased bg-dark-500`}>
 				<Header />
 				{children}
 				<Footer />

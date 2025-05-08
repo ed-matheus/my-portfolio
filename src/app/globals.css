@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --font-space-mono: "Space Mono", sans-serif;
-  font-family: var(--font-space-mono);
+  --font-sora: "Sora", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+  font-family: var(--font-sora);
 }
 
 @theme {
   --color-dark: #181d26;
+  --color-green-600: #0d6666;
   --color-green-500: #149c9c;
   --color-green-400: #6cb8b8;
   --color-light: #f5f5f5;
@@ -20,4 +22,8 @@ body {
 
 h1, h2 {
   color: var(--color-green-500)
+}
+
+p, span {
+  font-family: var(--font-urbanist)
 }
