@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Arquivo JSON com dados dos meus projetos
@@ -5,9 +8,19 @@ import projects from "@/data/my-projects.json";
 
 // Componentes
 import ProjectCard from "@/components/ProjectCard";
+import ProjectsFilter from "@/components/ProjectsFilter";
+
+// Ícones
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Projetos = () => {
+	const [selectedCategory, setSelectedCategory] = useState("Todos");
+
+	const filteredProjects =
+		selectedCategory === "Todos"
+			? projects
+			: projects.filter((p) => p.category === selectedCategory);
+
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
@@ -24,10 +37,14 @@ const Projetos = () => {
 				</p>
 			</section>
 
+			<div className="flex justify-center pt-10 mt-10 mb-[-1.5rem]">
+				<ProjectsFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+			</div>
+
 			{/* Grid de Projetos */}
-			<div className="max-w-[75%] mx-auto px-4 py-10">
+			<div className="max-w-[75%] mx-auto px-4 pb-10">
 				<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12">
-					{projects.map((project) => (
+					{filteredProjects.map((project) => (
 						<ProjectCard
 							key={project.name}
 							name={project.name}
