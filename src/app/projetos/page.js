@@ -11,11 +11,16 @@ const Projetos = () => {
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
-			<section className="px-50 py-15 bg-dark-400 gap-18 text-center">
+			<section className="px-50 pt-15 bg-dark-400 gap-18 text-center">
 				<h1 className="text-3xl font-bold text-blue-500 mb-4">Projetos</h1>
 				<p className="text-lg text-gray-300">
 					Uma seleção dos meus trabalhos com foco em design funcional e boas
-					práticas de desenvolvimento.
+					práticas de desenvolvimento. <br />
+					<span className="text-sm text-green-500">
+						Observação: Os projetos realizados com WordPress eu desenvolvi
+						enquanto estava trabalhando em uma agência de marketing digital,
+						chamada Pixel12Digital.
+					</span>
 				</p>
 			</section>
 
@@ -35,18 +40,14 @@ const Projetos = () => {
 					))}
 				</section>
 
+				<hr className="w-full text-green-500 border-2 rounded mt-10" />
+
 				{/* Call to Action */}
-				<div className="flex flex-col items-center justify-center mt-10">
+				<div className="flex flex-col items-center justify-center py-10">
 					<h2 className="text-xl mb-3">Gostou do que viu?</h2>
-					<button
-						type="button"
-						className="bg-green-600 px-4 py-2 rounded"
-					>
-						<a
-							href="/#"
-							className="text-white flex items-center gap-2"
-						>
-							<span className="font-bold">Entre em contato</span>
+					<button type="button" className="bg-green-600 px-4 py-2 rounded">
+						<a href="/#" className="text-white flex items-center gap-2">
+							<span className="font-medium">Entre em contato</span>
 							<FontAwesomeIcon icon={faWhatsapp} className="w-[1.2rem]" />
 						</a>
 					</button>
