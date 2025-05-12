@@ -34,9 +34,9 @@ export default function Home() {
 	];
 
 	return (
-		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
+		<main className="">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
-			<section className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-12 lg:py-18 bg-dark gap-10 lg:gap-20">
+			<section className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-20 lg:py-18 bg-dark gap-10 lg:gap-20">
 				<div className="text-center lg:text-left xl:max-w-[42rem]">
 					<h2 className="mb-5 text-xl sm:text-2xl md:text-3xl font-bold text-light">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
@@ -110,6 +110,7 @@ export default function Home() {
 							className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-xl"
 							width={320}
 							height={320}
+							priority
 						/>
 					</div>
 
@@ -185,7 +186,7 @@ export default function Home() {
 			</section>
 
 			{/* Seção de Projetos */}
-			<section className="flex flex-col justify-center items-center w-full md:px-10 lg:px-20 py-20 gap-10 sm:gap-12 md:gap-15">
+			<section className="flex flex-col justify-center items-center w-full md:px-10 lg:px-20 xl:px-25 py-20 gap-10 sm:gap-12 md:gap-15">
 				<h2 className="text-2xl md:text-3xl font-bold text-center">Projetos</h2>
 
 				<div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-14 md:gap-20 lg:gap-20 w-full">
