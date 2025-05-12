@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Contato = () => {
 	return (
 		<div className="w-full">
-			<section className="px-50 py-15 bg-dark-400 gap-18 text-center">
+			<section className="px-15 py-15 bg-dark-400 gap-18 text-center">
 				<h1 className="text-3xl font-bold text-blue-500 mb-4">Fale Comigo</h1>
 				<p className="text-lg text-gray-300">
 					Estou disponível para novos projetos, parcerias ou até mesmo para
@@ -16,7 +16,7 @@ const Contato = () => {
 				</p>
 			</section>
 
-			<section className="w-full py-25 px-50">
+			<section className="w-full py-8 px-15">
 				<form className="max-w-xl mx-auto grid gap-4">
 					<input
 						type="text"
@@ -45,8 +45,8 @@ const Contato = () => {
 				</form>
 
 				<div className="mt-20 text-center">
-					<p className="text-gray-400 mb-4">Ou entre em contato pelas redes:</p>
-					<div className="flex justify-center gap-10">
+					<p className="text-gray-400 mb-5">Ou entre em contato pelas redes:</p>
+					<div className="flex flex-col items-center justify-center gap-10">
 						<a
 							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
 							target="_blank"

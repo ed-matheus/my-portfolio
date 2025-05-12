@@ -24,7 +24,7 @@ const Projetos = () => {
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
-			<section className="px-50 pt-15 bg-dark-400 gap-18 text-center">
+			<section className="px-15 pt-15 bg-dark-400 gap-18 text-center">
 				<h1 className="text-3xl font-bold text-blue-500 mb-4">Projetos</h1>
 				<p className="text-lg text-gray-300">
 					Uma seleção dos meus trabalhos com foco em design funcional e boas
@@ -42,8 +42,8 @@ const Projetos = () => {
 			</div>
 
 			{/* Grid de Projetos */}
-			<div className="max-w-[75%] mx-auto px-4 pb-10">
-				<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12">
+			<div className="w-full px-4 pb-10">
+				<section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12 px-5">
 					{filteredProjects.map((project) => (
 						<ProjectCard
 							key={project.name}

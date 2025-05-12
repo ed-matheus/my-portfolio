@@ -6,7 +6,7 @@ const Sobre = () => {
 	return (
 		<div className="w-full text-white">
 			{/* SEÇÃO: Quem sou eu */}
-			<section className="flex flex-col justify-center items-start w-full px-50 py-18">
+			<section className="flex flex-col justify-center items-start w-full px-15 py-18">
 				<h2 className="text-blue-500 mb-4 text-2xl font-bold">Quem sou eu</h2>
 				<p className="text-lg leading-relaxed">
 					Meu nome completo é Edson Matheus de Jesus da Costa, tenho 22 anos
@@ -25,7 +25,7 @@ const Sobre = () => {
 			</section>
 
 			{/* SEÇÃO: O que eu faço */}
-			<section className="flex flex-col justify-center items-start w-full px-50 py-18 bg-dark-400">
+			<section className="flex flex-col justify-center items-start w-full px-15 py-18 bg-dark-400">
 				<h2 className="text-blue-500 mb-4 text-2xl font-bold">O que eu faço</h2>
 				<p className="text-lg leading-relaxed">
 					Atuo criando <strong>sites institucionais</strong>,{" "}
@@ -39,7 +39,7 @@ const Sobre = () => {
 			</section>
 
 			{/* SEÇÃO: Ferramentas que utilizo */}
-			<section className="flex flex-col justify-center items-start w-full px-50 py-18">
+			<section className="flex flex-col justify-center items-start w-full px-15 py-18">
 				<h2 className="text-blue-500 mb-4 text-2xl font-bold">
 					Ferramentas que utilizo
 				</h2>
@@ -64,7 +64,7 @@ const Sobre = () => {
 			</section>
 
 			{/* SEÇÃO: Como eu trabalho */}
-			<section className="flex flex-col justify-center items-start w-full px-50 py-18 bg-dark-400">
+			<section className="flex flex-col justify-center items-start w-full px-15 py-18 bg-dark-400">
 				<h2 className="text-blue-500 mb-4 text-2xl font-bold">
 					Como eu trabalho
 				</h2>

@@ -27,9 +27,9 @@ const Header = () => {
   const iconClose = <FontAwesomeIcon icon={faXmark} className="w-5 h-5" />;
 
   return (
-    <header className="flex justify-between items-center px-5 md:px-18 py-5 text-light bg-dark border-b-2 border-green-500 relative z-50">
+    <header className="flex justify-between items-center px-5 md:px-5 py-5 text-light bg-dark border-b-2 border-green-500 relative z-50">
       {/* Logo */}
-      <Link href="/" className="text-green-500 text-xl font-black">
+      <Link href="/" className="text-green-500 text-xl md:text-[1.2rem] font-black">
         Matheus Costa
       </Link>
 

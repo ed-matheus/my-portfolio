@@ -37,7 +37,7 @@ export default function Home() {
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
 			<section className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-12 lg:py-18 bg-dark gap-10 lg:gap-20">
-				<div className="text-center lg:text-left max-w-xl">
+				<div className="text-center lg:text-left xl:max-w-[42rem]">
 					<h2 className="mb-5 text-xl sm:text-2xl md:text-3xl font-bold text-light">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
 						Front-end
@@ -87,7 +87,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<Image
+				<img
 					src="/me.png"
 					alt="Foto de Matheus"
 					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
@@ -99,27 +99,27 @@ export default function Home() {
 			{/* Seção Sobre mim */}
 			<section
 				id="sobre"
-				className="w-full px-6 lg:px-20 py-12 lg:py-20 bg-linear-to-b lg:bg-linear-to-r from-green-500 to-light"
+				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-linear-to-b lg:bg-linear-to-r from-green-500 to-light"
 			>
-				<div className="flex flex-col lg:flex-row items-center gap-12">
+				<div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-0">
 					{/* Imagem */}
 					<div className="w-full lg:w-1/2 flex justify-center">
 						<Image
 							src="/images/matheus.png"
 							alt="Matheus trabalhando"
-							className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-lg"
+							className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-xl"
 							width={320}
 							height={320}
 						/>
 					</div>
 
-					{/* Texto */}
-					<div className="w-full lg:w-1/2 text-center lg:text-left mb-[-1rem]">
+					{/* Conteúdo */}
+					<div className="flex flex-col items-center w-full lg:w-1/2 xl:w-[35rem] lg:items-start text-center lg:text-left mb-[-1rem]">
 						<h3 className="text-[1.4rem] sm:text-3xl font-bold text-green-600 mb-4">
 							Sobre mim
 						</h3>
 
-						<ul className="flex items-center justify-between text-[0.9rem] my-5 text-dark">
+						<ul className="flex items-center justify-between text-[0.9rem] lg:text-[1rem] my-5 text-dark gap-6">
 							<li>
 								<FontAwesomeIcon
 									icon={faCode}
@@ -155,11 +155,11 @@ export default function Home() {
 							Busco oportunidades onde possa crescer, aprender e colaborar com
 							pessoas que valorizam o impacto do design na vida das pessoas.
 						</p>
-					</div>
 
-					<Link href={"/sobre"}>
-						<Button text={"Ver mais"} />
-					</Link>
+						<Link href={"/sobre"} className="mt-6">
+							<Button text={"Ver mais"} />
+						</Link>
+					</div>
 				</div>
 			</section>
 
@@ -185,10 +185,10 @@ export default function Home() {
 			</section>
 
 			{/* Seção de Projetos */}
-			<section className="flex flex-col justify-center items-center w-full px-10 md:px-10 lg:px-20 py-20 gap-10 sm:gap-12 md:gap-15">
+			<section className="flex flex-col justify-center items-center w-full md:px-10 lg:px-20 py-20 gap-10 sm:gap-12 md:gap-15">
 				<h2 className="text-2xl md:text-3xl font-bold text-center">Projetos</h2>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-20 w-full max-w-[1280px]">
+				<div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-14 md:gap-20 lg:gap-20 w-full">
 					{projects.slice(0, 3).map((project) => (
 						<ProjectCard
 							key={project.name}
