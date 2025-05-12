@@ -25,17 +25,27 @@ import ProjectCard from "@/components/ProjectCard";
 import projects from "@/data/my-projects.json";
 
 export default function Home() {
+	const skills = [
+		{ name: "HTML", color: "red", icon: faHtml5 },
+		{ name: "CSS", color: "blue", icon: faCss3 },
+		{ name: "JavaScript", color: "yellow", icon: faJs },
+		{ name: "React", color: "cyan", icon: faReact },
+		{ name: "WordPress", color: "gray", icon: faWordpress },
+	];
+
+	console.log(skills.icon);
+
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
-			<section className="flex justify-center items-center w-full px-50 py-18 bg-dark gap-45">
-				<div>
-					<h2 className="mb-5 text-2xl font-bold">
+			<section className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-12 lg:py-18 bg-dark gap-10 lg:gap-20">
+				<div className="text-center lg:text-left max-w-xl">
+					<h2 className="mb-5 text-xl sm:text-2xl md:text-3xl font-bold text-light">
 						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
 						Front-end
 					</h2>
 
-					<p className="text-xl mb-5">
+					<p className="text-base sm:text-lg md:text-xl mb-5 text-gray-300">
 						Transformo ideias em experiências digitais modernas, funcionais e
 						intuitivas. <br />
 						Este é o meu portfólio, onde compartilho meus projetos, habilidades
@@ -43,14 +53,14 @@ export default function Home() {
 					</p>
 
 					{/* Redes Sociais */}
-					<div className="flex items-center gap-4">
+					<div className="flex justify-center lg:justify-start items-center gap-4">
 						<a
 							href="https://www.facebook.com/edson.matheus.372/"
 							target="__blank"
 						>
 							<button
 								type="button"
-								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:cursor-pointer hover:bg-green-500 hover:text-light"
+								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:bg-green-500 hover:text-light transition"
 							>
 								<FontAwesomeIcon icon={faFacebook} className="w-[1.2rem]" />
 							</button>
@@ -62,7 +72,7 @@ export default function Home() {
 						>
 							<button
 								type="button"
-								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:cursor-pointer hover:bg-green-500 hover:text-light"
+								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:bg-green-500 hover:text-light transition"
 							>
 								<FontAwesomeIcon icon={faLinkedinIn} className="w-[1.1rem]" />
 							</button>
@@ -71,7 +81,7 @@ export default function Home() {
 						<a href="https://github.com/ed-matheus" target="__blank">
 							<button
 								type="button"
-								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:cursor-pointer hover:bg-green-500 hover:text-light"
+								className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:bg-green-500 hover:text-light transition"
 							>
 								<FontAwesomeIcon icon={faGithub} className="w-[1.2rem]" />
 							</button>
@@ -79,128 +89,106 @@ export default function Home() {
 					</div>
 				</div>
 
-				<img src="/me.png" alt="" className="w-[25rem] h-[25rem]" />
+				<img
+					src="/me.png"
+					alt="Foto de Matheus"
+					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
+				/>
 			</section>
 
 			{/* Seção Sobre mim */}
-			<section className="flex justify-center items-center w-full px-50 py-18 bg-linear-to-r from-green-600 via-green-500 to-green-400 gap-15">
-				{/* <div className="relative w-fit overflow-hidden"> */}
-				<Image
-					src={"/images/matheus.png"}
-					width={320}
-					height={320}
-					className="rounded-lg w-[40rem]"
-					alt="foto do Matheus em desenho"
-					style={{ borderBottom: "4px solid #ffffff" }}
-				/>
-				{/* </div> */}
+			<section
+				id="sobre"
+				className="w-full px-6 lg:px-20 py-12 lg:py-20 bg-linear-to-b lg:bg-linear-to-r from-green-500 to-light"
+			>
+				<div className="flex flex-col lg:flex-row items-center gap-12">
+					{/* Imagem */}
+					<div className="w-full lg:w-1/2 flex justify-center">
+						<Image
+							src="/images/matheus.png"
+							alt="Matheus trabalhando"
+							className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-lg"
+							width={320}
+							height={320}
+						/>
+					</div>
 
-				<div className="">
-					<h2
-						className="mb-5 text-2xl text-light font-bold"
-						style={{ color: "#fff" }}
-					>
-						Sobre mim
-					</h2>
+					{/* Texto */}
+					<div className="w-full lg:w-1/2 text-center lg:text-left mb-[-1rem]">
+						<h3 className="text-[1.4rem] sm:text-3xl font-bold text-green-600 mb-4">
+							Sobre mim
+						</h3>
 
-					{/* Competências */}
-					<ul className="flex gap-18 my-6">
-						<li className="flex items-center text-[1.2rem]">
-							<FontAwesomeIcon
-								icon={faPenRuler}
-								className="me-2 w-[1.3rem] text-dark"
-							/>
-							Web Design
-						</li>
-						<li className="flex items-center text-[1.2rem]">
-							<FontAwesomeIcon
-								icon={faUsers}
-								className="me-2 w-[1.3rem] text-dark"
-							/>
-							UX/UI Design
-						</li>
-						<li className="flex items-center text-[1.2rem]">
-							<FontAwesomeIcon
-								icon={faCode}
-								className="me-2 w-[1.3rem] text-dark"
-							/>
-							Desenvolvimento Front-end
-						</li>
-					</ul>
+						<ul className="flex items-center justify-between text-[0.9rem] my-5 text-dark">
+							<li>
+								<FontAwesomeIcon
+									icon={faCode}
+									className="me-1 text-green-600"
+								/>
+								Web Design
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faPenRuler}
+									className="me-1 text-green-600"
+								/>
+								Front-end
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faUsers}
+									className="me-1 text-green-600"
+								/>
+								Design UX/UI
+							</li>
+						</ul>
 
-					<p className="text-lg">
-						Sou tecnólogo em Design de Mídias Digitais formado pela Fatec
-						Barueri, com experiência em criação de sites institucionais, landing
-						pages e e-commerces. Tenho conhecimentos em WordPress, React e
-						ferramentas de design como Figma, Photoshop e Illustrator.
-					</p>
+						<p className="text-base sm:text-lg text-gray-800 mb-4">
+							Sou um profissional apaixonado por criar experiências digitais que
+							unem design e tecnologia. <br className="hidden sm:inline" />
+							Formado em Design de Mídias Digitais pela FATEC Barueri e cursando
+							desenvolvimento web front-end, aplico meus conhecimentos em
+							projetos que exigem atenção aos detalhes, responsividade e foco na
+							experiência do usuário.
+						</p>
+						<p className="text-base sm:text-lg text-gray-800">
+							Busco oportunidades onde possa crescer, aprender e colaborar com
+							pessoas que valorizam o impacto do design na vida das pessoas.
+						</p>
+					</div>
 
-					<br />
-
-					<p className="text-lg mb-5">
-						Gosto de unir criatividade e organização para entregar soluções
-						visuais modernas, funcionais e com foco em resultados. Também tenho
-						boa familiaridade com tecnologias web, versionamento com Git e
-						noções de redes e suporte técnico. Sou comunicativo, proativo e
-						comprometido com a entrega de um trabalho bem feito.
-					</p>
-
-					<a href="/sobre" className="me-5">
+					<Link href={"/sobre"}>
 						<Button text={"Ver mais"} />
-					</a>
+					</Link>
 				</div>
 			</section>
 
 			{/* Seção Habilidades */}
-			<section className="flex flex-col justify-center items-center w-full px-50 py-20 gap-15 bg-dark">
-				<h2 className="text-2xl font-bold">Habilidades</h2>
+			<section id="skills" className="w-full px-6 lg:px-20 py-12 lg:py-20">
+				<div className="max-w-6xl mx-auto text-center">
+					<h3 className="text-[1.4rem] sm:text-3xl font-bold text-center text-green-500 mb-10">
+						Minhas habilidades
+					</h3>
 
-				<div className="flex items-center justify-center gap-25">
-					<img
-						src="/images/programming-vector.png"
-						alt="dev vector"
-						className="w-[25rem] h-[25rem]"
-					/>
-
-					<div className="w-96">
-						<Skill
-							name={"HTML5"}
-							iconName={faHtml5}
-							level={"85"}
-							bgColor={"bg-red-800"}
-						/>
-						<Skill
-							name={"CSS3"}
-							iconName={faCss3}
-							level={"80"}
-							bgColor={"bg-blue-400"}
-						/>
-						<Skill
-							name={"JavaScript"}
-							iconName={faJs}
-							level={"60"}
-							bgColor={"bg-yellow-400"}
-						/>
-						<Skill
-							name={"React"}
-							iconName={faReact}
-							level={"60"}
-							bgColor={"bg-blue-500"}
-						/>
-						<Skill
-							name={"WordPress"}
-							iconName={faWordpress}
-							level={"85"}
-							bgColor={"bg-purple-800"}
-						/>
+					<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 content-center">
+						{/* Habilidades individuais */}
+						{skills.map((skill) => (
+							<Skill
+								key={skill.name}
+								name={skill.name}
+								iconColor={skill.color}
+								iconName={skill.icon}
+							/>
+						))}
 					</div>
 				</div>
 			</section>
 
 			{/* Seção de Projetos */}
-			<section className="flex flex-col justify-center items-center w-full px-50 py-20 gap-15">
-				<h2 className="text-2xl font-bold">Projetos</h2>
-				<div className="grid grid-cols-3 grid-rows-0 gap-20">
+			<section className="flex flex-col justify-center items-center w-full px-10 md:px-10 lg:px-20 py-20 gap-10 sm:gap-12 md:gap-15">
+				<h2 className="text-2xl md:text-3xl font-bold text-center">Projetos</h2>
+
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-20 w-full max-w-[1280px]">
 					{projects.slice(0, 3).map((project) => (
 						<ProjectCard
 							key={project.name}
@@ -214,8 +202,8 @@ export default function Home() {
 					))}
 				</div>
 
-				<Link href={"/projetos"}>
-					<Button text={"Veja mais"} />
+				<Link href="/projetos">
+					<Button text="Veja mais" />
 				</Link>
 			</section>
 		</main>
