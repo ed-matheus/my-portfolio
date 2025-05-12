@@ -79,13 +79,13 @@ const Header = () => {
             </Link>
           ))}
 
-          <a
+          <Link
             href="/files/Currículo - Edson Matheus.pdf"
             download
             className="w-fit"
           >
             <Button type="button" text="Baixar CV" icon={iconDownload} />
-          </a>
+          </Link>
         </div>
       )}
     </header>

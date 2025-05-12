@@ -33,8 +33,6 @@ export default function Home() {
 		{ name: "WordPress", color: "gray", icon: faWordpress },
 	];
 
-	console.log(skills.icon);
-
 	return (
 		<main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen">
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}

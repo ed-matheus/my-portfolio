@@ -9,7 +9,8 @@ const ProjectCard = ({ img, name, desc, skills, link, codeLink }) => {
         alt={`Print do projeto ${name}`}
         className="w-full h-[220px] mb-5 rounded-[10px] object-cover"
         width={400}
-        height={220}
+        height={400}
+        priority
       />
 
       <div className="flex flex-col gap-4 mb-8">
