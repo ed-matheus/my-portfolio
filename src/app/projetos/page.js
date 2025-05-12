@@ -43,7 +43,7 @@ const Projetos = () => {
 
 			{/* Grid de Projetos */}
 			<div className="w-full px-4 pb-10">
-				<section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12 px-5">
+				<section className="w-full grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12 px-5">
 					{filteredProjects.map((project) => (
 						<ProjectCard
 							key={project.name}
