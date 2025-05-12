@@ -87,10 +87,12 @@ export default function Home() {
 					</div>
 				</div>
 
-				<img
+				<Image
 					src="/me.png"
 					alt="Foto de Matheus"
 					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
+					width={192}
+					height={192}
 				/>
 			</section>
 
