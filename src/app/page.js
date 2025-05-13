@@ -123,14 +123,14 @@ export default function Home() {
 						<ul className="flex items-center justify-between text-[0.9rem] lg:text-[1rem] my-5 text-dark gap-6">
 							<li>
 								<FontAwesomeIcon
-									icon={faCode}
+									icon={faPenRuler}
 									className="me-1 text-green-600"
 								/>
 								Web Design
 							</li>
 							<li>
 								<FontAwesomeIcon
-									icon={faPenRuler}
+									icon={faCode}
 									className="me-1 text-green-600"
 								/>
 								Front-end
