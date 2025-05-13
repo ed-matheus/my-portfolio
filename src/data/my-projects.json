@@ -89,7 +89,7 @@
   {
     "img": "news-homepage.png",
     "name": "News Homepage",
-    "desc": "Uma aplicação Web que retorna dados do CEP que o usuário quiser consultar, vindos de uma API chamada ViaCEP.",
+    "desc": "Outro desafio do Frontend Mentor, dessa vez uma Homepage para um site de notícias fictício.",
     "skills": [
       { "id": 1, "name": "HTML" },
       { "id": 2, "name": "CSS" },
@@ -98,5 +98,19 @@
     "category": "Em Código",
     "link": "https://virtualnewspaper-homepage.netlify.app/",
     "codeLink": "https://github.com/ed-matheus/news-homepage"
+  },
+  {
+    "img": "extensions-manager.png",
+    "name": "Browser Extensions Manager",
+    "desc": "Frontend Mentor sempre disponibilizando ótimos desafios. Esse é um gerenciador de extensões, que conta com filtro, modo escuro, e lógica de ativação e desativação.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 4, "name": "Next.js" },
+      { "id": 3, "name": "Tailwind" }
+    ],
+    "category": "Em Código",
+    "link": "https://browser-extensions-manager-by-edmath.netlify.app/",
+    "codeLink": "https://github.com/ed-matheus/next-browser-extensions-manager"
   }
 ]
