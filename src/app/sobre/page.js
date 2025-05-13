@@ -26,7 +26,7 @@ const Sobre = () => {
 					<Image
 						src="/images/matheus.png"
 						alt="Matheus trabalhando"
-						className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-xl"
+						className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-lg shadow-green-600"
 						width={320}
 						height={320}
 						priority

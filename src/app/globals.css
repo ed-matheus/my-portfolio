@@ -24,6 +24,6 @@ h1, h2 {
   color: var(--color-green-500)
 }
 
-p, span {
+p {
   font-family: var(--font-urbanist)
 }
