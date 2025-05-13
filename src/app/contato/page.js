@@ -44,9 +44,9 @@ const Contato = () => {
 					</button>
 				</form>
 
-				<div className="mt-20 text-center">
+				<div className="my-20 text-center">
 					<p className="text-gray-400 mb-5">Ou entre em contato pelas redes:</p>
-					<div className="flex flex-col items-center justify-center gap-10">
+					<div className="flex flex-col md:flex-row items-center justify-center gap-10">
 						<a
 							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
 							target="_blank"

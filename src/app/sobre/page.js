@@ -21,7 +21,7 @@ const Sobre = () => {
 	return (
 		<div className="flex flex-col justify-center items-center text-center w-full text-white lg:text-start">
 			{/* SEÇÃO: Quem sou eu */}
-			<section className="flex flex-col lg:flex-row justify-center items-center w-full px-10 md:px-15 lg:px-20 py-18 gap-10">
+			<section className="flex flex-col lg:flex-row justify-center items-center w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 gap-10">
 				<div className="w-full flex justify-center">
 					<Image
 						src="/images/matheus.png"
@@ -56,7 +56,7 @@ const Sobre = () => {
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: O que eu faço */}
-			<section className="w-full px-10 md:px-15 lg:px-20 py-18 bg-dark-400">
+			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400">
 				<h2 className="mb-4 text-2xl font-bold ">O que eu faço</h2>
 				<p className="text-md leading-relaxed">
 					Atuo criando <strong>sites institucionais</strong>,{" "}
@@ -72,7 +72,7 @@ const Sobre = () => {
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: Ferramentas que utilizo */}
-			<section className="w-full px-10 md:px-15 lg:px-20 py-18">
+			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20">
 				<h2 className="mb-4 text-2xl font-bold">Ferramentas que utilizo</h2>
 				<p className="text-md">
 					Essas são as principais ferramentas que tenho conhecimento. Algumas eu
@@ -116,7 +116,7 @@ const Sobre = () => {
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: Como eu trabalho */}
-			<section className="w-full px-10 md:px-15 lg:px-20 py-18 bg-dark-400">
+			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400">
 				<h2 className="mb-4 text-2xl font-bold">Como eu trabalho</h2>
 				<p className="text-md leading-relaxed">
 					Antes de colocar qualquer ideia em código, busco entender bem o

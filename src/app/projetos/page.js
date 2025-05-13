@@ -21,6 +21,9 @@ const Projetos = () => {
 			? projects
 			: projects.filter((p) => p.category === selectedCategory);
 
+	const qtdProjetos = filteredProjects.length;
+	console.log(filteredProjects.length);
+
 	return (
 		<div className="w-full">
 			{/* Cabeçalho */}
@@ -37,13 +40,23 @@ const Projetos = () => {
 				</p>
 			</section>
 
-			<div className="flex justify-center pt-10 mt-10 mb-[-1.5rem]">
-				<ProjectsFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+			{/* Filtro de projetos */}
+			<div className="flex flex-col items-center justify-center pt-10 mt-10 mb-[-1.5rem]">
+				<span className="text-xl mb-3">Filtro</span>
+
+				<ProjectsFilter
+					selectedCategory={selectedCategory}
+					setSelectedCategory={setSelectedCategory}
+				/>
 			</div>
+
+			<h3 className="text-center text-md md:text-lg mt-4 text-green-500">
+				{qtdProjetos} projetos
+			</h3>
 
 			{/* Grid de Projetos */}
 			<div className="w-full px-4 pb-10">
-				<section className="w-full grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 gap-15 py-12 px-5">
+				<section className="w-full grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-15 py-12 px-5 lg:gap-x-0 xl:gap-x-0 xl:px-18">
 					{filteredProjects.map((project) => (
 						<ProjectCard
 							key={project.name}
@@ -63,7 +76,10 @@ const Projetos = () => {
 				<div className="flex flex-col items-center justify-center py-10">
 					<h2 className="text-xl mb-3">Gostou do que viu?</h2>
 					<button type="button" className="bg-green-600 px-4 py-2 rounded">
-						<a href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/" className="text-white flex items-center gap-2">
+						<a
+							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
+							className="text-white flex items-center gap-2"
+						>
 							<span className="font-medium">Entre em contato</span>
 							<FontAwesomeIcon icon={faWhatsapp} className="w-[1.2rem]" />
 						</a>
