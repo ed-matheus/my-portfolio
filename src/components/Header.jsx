@@ -14,8 +14,6 @@ import { faDownload, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
-
   const menuItems = [
     { id: 1, path: "/", name: "Home" },
     { id: 2, path: "/sobre", name: "Sobre" },
@@ -75,10 +73,10 @@ const Header = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 0, scale: 1 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: -10, scale: 1 }}
+            animate={{ opacity: 1, y: -1, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 1 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="absolute top-full left-0 w-full bg-dark px-5 py-6 flex flex-col gap-6 md:hidden font-bold"
           >
             {menuItems.map((item) => (

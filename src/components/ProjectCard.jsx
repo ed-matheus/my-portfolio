@@ -15,7 +15,7 @@ const ProjectCard = ({ img, name, desc, skills, link, codeLink }) => {
 
       <div className="flex flex-col gap-4 mb-8">
         <h2 className="font-bold text-[1.2rem]">{name}</h2>
-        <span>{desc}</span>
+        <span className="text-sm lg:text-[0.8rem]">{desc}</span>
 
         {/* Skills */}
         <ul className="flex flex-wrap gap-2 text-sm text-white">
