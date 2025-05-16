@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,6 +13,7 @@ import Button from "./Button";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const pathname = usePathname(); // CORRIGIDO
   const [menuOpen, setMenuOpen] = useState(false);
 
   const menuItems = [
@@ -37,13 +39,27 @@ const Header = () => {
       {/* Menu Desktop */}
       <nav className="hidden md:flex">
         <ul className="flex gap-10 font-black">
-          {menuItems.map((item) => (
-            <li key={item.id}>
-              <Link href={item.path} className="hover:text-green-500">
-                {item.name}
-              </Link>
-            </li>
-          ))}
+          {menuItems.map((item) => {
+            const isActive = pathname === item.path;
+            return (
+              <li key={item.id}>
+                <Link
+                  href={item.path}
+                  className={`relative transition-colors ${
+                    isActive ? "text-green-500" : "hover:text-green-500"
+                  }`}
+                >
+                  {item.name}
+                  {isActive && (
+                    <motion.span
+                      layoutId="underline"
+                      className="absolute -bottom-1 left-0 w-full h-[2px] bg-green-500"
+                    />
+                  )}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
@@ -70,29 +86,34 @@ const Header = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10, scale: 1 }}
-            animate={{ opacity: 1, y: -1, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 1 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="absolute top-full left-0 w-full bg-dark px-5 py-6 flex flex-col gap-6 md:hidden font-bold"
           >
-            {menuItems.map((item) => (
-              <Link
-                key={item.id}
-                href={item.path}
-                className="hover:text-green-500"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {menuItems.map((item) => {
+              const isActive = pathname === item.path;
+              return (
+                <Link
+                  key={item.id}
+                  href={item.path}
+                  className={`${
+                    isActive ? "text-green-500" : "hover:text-green-500"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
 
             <Link
               href="/files/Currículo - Edson Matheus.pdf"
               download
               className="w-fit"
             >
-              <Button type="button" text="Baixar CV" icon={iconDownload} />
+              <Button type="button" text="Baixar CV" />
             </Link>
           </motion.div>
         )}
