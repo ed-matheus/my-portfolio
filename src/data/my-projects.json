@@ -102,7 +102,7 @@
   {
     "img": "extensions-manager.png",
     "name": "Browser Extensions Manager",
-    "desc": "Frontend Mentor sempre disponibilizando ótimos desafios. Esse é um gerenciador de extensões, que conta com filtro, modo escuro, e lógica de ativação e desativação.",
+    "desc": "Frontend Mentor sempre disponibilizando ótimos desafios. Esse é um gerenciador de extensões, que conta com filtro, modo escuro, e lógica de ativação e desativação. Projeto ainda sujeito a melhorias.",
     "skills": [
       { "id": 1, "name": "HTML" },
       { "id": 2, "name": "CSS" },

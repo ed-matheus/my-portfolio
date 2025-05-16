@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
 
 // Ícones
-import { faDownload, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,9 +21,6 @@ const Header = () => {
     { id: 4, path: "/contato", name: "Contato" },
   ];
 
-  const iconDownload = (
-    <FontAwesomeIcon icon={faDownload} className="w-[1rem]" />
-  );
   const iconBars = <FontAwesomeIcon icon={faBars} className="w-5 h-5" />;
   const iconClose = <FontAwesomeIcon icon={faXmark} className="w-5 h-5" />;
 
@@ -56,7 +53,7 @@ const Header = () => {
         download
         className="hidden md:flex"
       >
-        <Button type="button" text={"Baixar CV"} icon={iconDownload} />
+        <Button type="button" text={"Baixar CV"} />
       </a>
 
       {/* Botão Hamburger Mobile */}
