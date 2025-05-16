@@ -121,13 +121,6 @@ const Contato = () => {
 							LinkedIn
 						</a>
 						<a
-							href="mailto:edsonmatheus02@hotmail.com"
-							className="hover:text-green-500 flex items-center gap-2"
-						>
-							<FontAwesomeIcon icon={faEnvelope} className="w-[1.2rem]" />
-							E-mail
-						</a>
-						<a
 							href="https://github.com/ed-matheus"
 							target="_blank"
 							rel="noreferrer"
