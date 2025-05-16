@@ -106,8 +106,9 @@
     "skills": [
       { "id": 1, "name": "HTML" },
       { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "TypeScript" },
       { "id": 4, "name": "Next.js" },
-      { "id": 3, "name": "Tailwind" }
+      { "id": 5, "name": "Tailwind" }
     ],
     "category": "Em Código",
     "link": "https://browser-extensions-manager-by-edmath.netlify.app/",
