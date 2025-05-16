@@ -12,6 +12,7 @@ import ProjectsFilter from "@/components/ProjectsFilter";
 
 // Ícones
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Projetos = () => {
 	const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -76,13 +77,13 @@ const Projetos = () => {
 				<div className="flex flex-col items-center justify-center py-10">
 					<h2 className="text-xl mb-3">Gostou do que viu?</h2>
 					<button type="button" className="bg-green-600 px-4 py-2 rounded">
-						<a
-							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
+						<Link
+							href="/contato"
 							className="text-white flex items-center gap-2"
 						>
 							<span className="font-medium">Entre em contato</span>
-							<FontAwesomeIcon icon={faWhatsapp} className="w-[1.2rem]" />
-						</a>
+							{/* <FontAwesomeIcon icon={faWhatsapp} className="w-[1.2rem]" /> */}
+						</Link>
 					</button>
 				</div>
 			</div>
