@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -18,10 +21,22 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Sobre = () => {
+	const fadeUp = {
+		hidden: { opacity: 0, y: 20 },
+		visible: { opacity: 1, y: 0 },
+	};
+
 	return (
 		<div className="flex flex-col justify-center items-center text-center w-full text-white lg:text-start">
 			{/* SEÇÃO: Quem sou eu */}
-			<section className="flex flex-col lg:flex-row justify-center items-center w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 gap-10">
+			<motion.section
+				className="flex flex-col lg:flex-row justify-center items-center w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 gap-10"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				variants={fadeUp}
+			>
 				<div className="w-full flex justify-center">
 					<Image
 						src="/images/matheus.png"
@@ -51,12 +66,19 @@ const Sobre = () => {
 						técnica, é colaboração e visão.
 					</p>
 				</div>
-			</section>
+			</motion.section>
 
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: O que eu faço */}
-			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400">
+			<motion.section
+				className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				variants={fadeUp}
+			>
 				<h2 className="mb-4 text-2xl font-bold ">O que eu faço</h2>
 				<p className="text-md leading-relaxed">
 					Atuo criando <strong>sites institucionais</strong>,{" "}
@@ -67,12 +89,19 @@ const Sobre = () => {
 					entregar soluções bem pensadas, que funcionem tanto para o cliente
 					quanto para quem navega.
 				</p>
-			</section>
+			</motion.section>
 
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: Ferramentas que utilizo */}
-			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20">
+			<motion.section
+				className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				variants={fadeUp}
+			>
 				<h2 className="mb-4 text-2xl font-bold">Ferramentas que utilizo</h2>
 				<p className="text-md">
 					Essas são as principais ferramentas que tenho conhecimento. Algumas eu
@@ -111,12 +140,19 @@ const Sobre = () => {
 					o que me permite lidar melhor com integrações e estrutura técnica de
 					projetos.
 				</p>
-			</section>
+			</motion.section>
 
 			<hr className="w-75 md:w-[85%] mx-auto" />
 
 			{/* SEÇÃO: Como eu trabalho */}
-			<section className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400">
+			<motion.section
+				className="w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 bg-dark-400"
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				variants={fadeUp}
+			>
 				<h2 className="mb-4 text-2xl font-bold">Como eu trabalho</h2>
 				<p className="text-md leading-relaxed">
 					Antes de colocar qualquer ideia em código, busco entender bem o
@@ -124,7 +160,7 @@ const Sobre = () => {
 					transformo tudo isso em uma interface funcional, leve e intuitiva.
 					Valorizo a clareza e o equilíbrio entre estética e experiência.
 				</p>
-			</section>
+			</motion.section>
 		</div>
 	);
 };
