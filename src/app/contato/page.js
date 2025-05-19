@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Ícones
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contato = () => {
 	const [name, setName] = useState("");
@@ -40,18 +40,39 @@ const Contato = () => {
 		}
 	};
 
+	const fadeUp = {
+		hidden: { opacity: 0, y: 20 },
+		visible: { opacity: 1, y: 0 },
+	};
+
 	return (
 		<div className="w-full">
-			<section className="px-15 py-15 bg-dark-400 gap-18 text-center">
-				<h1 className="text-3xl font-bold text-blue-500 mb-4">Fale Comigo</h1>
+			<motion.section
+				initial="hidden"
+				whileInView="visible"
+				variants={fadeUp}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				className="px-15 py-15 bg-dark-400 gap-18 text-center"
+			>
+				<h1 variants={fadeUp} className="text-3xl font-bold text-blue-500 mb-4">
+					Fale Comigo
+				</h1>
 				<p className="text-lg text-gray-300">
 					Estou disponível para novos projetos, parcerias ou até mesmo para
 					trocar uma ideia! <br /> Preencha o formulário ou use minhas redes
 					abaixo.
 				</p>
-			</section>
+			</motion.section>
 
-			<section className="w-full py-8 px-15">
+			<motion.section
+				initial="hidden"
+				whileInView="visible"
+				variants={fadeUp}
+				viewport={{ once: true }}
+				transition={{ staggerChildren: 0.2 }}
+				className="w-full py-8 px-15"
+			>
 				<form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
 					<div>
 						<label htmlFor="name" className="block text-sm font-medium">
@@ -131,7 +152,7 @@ const Contato = () => {
 						</a>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 		</div>
 	);
 };
