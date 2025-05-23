@@ -113,5 +113,20 @@
     "category": "Em Código",
     "link": "https://browser-extensions-manager-by-edmath.netlify.app/",
     "codeLink": "https://github.com/ed-matheus/next-browser-extensions-manager"
+  },
+  {
+    "img": "agendapp.png",
+    "name": "Projeto AgendApp",
+    "desc": "Projeto ainda em andamento. O objetivo é facilitar o trabalho de prestadores de serviços (barbeiros, manicures, psicólogos...) e de seus clientes, deixando os agendamentos mais práticos para ambos os lados.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "TypeScript" },
+      { "id": 4, "name": "Next.js" },
+      { "id": 5, "name": "Tailwind" }
+    ],
+    "category": "Em Código",
+    "link": "",
+    "codeLink": "https://github.com/ed-matheus/agenda-app"
   }
 ]
