@@ -63,9 +63,9 @@ const Projetos = () => {
 					Uma seleção dos meus trabalhos com foco em design atrativo e boas
 					práticas de desenvolvimento. <br />
 					<span className="text-sm text-green-500">
-						Observação: Os projetos "Tânia Neves", "Green Gold" e "Questy"
-						realizados com WordPress, eu desenvolvi enquanto estava trabalhando
-						numa agência chamada Pixel12Digital.
+						Observação: Os projetos Tânia Neves, Green Gold e Questy realizados
+						com WordPress, eu desenvolvi enquanto estava trabalhando numa
+						agência chamada Pixel12Digital.
 					</span>
 				</p>
 			</motion.section>
