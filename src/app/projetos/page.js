@@ -60,12 +60,12 @@ const Projetos = () => {
 			>
 				<h1 className="text-3xl font-bold text-blue-500 mb-4">Projetos</h1>
 				<p className="text-lg text-gray-300">
-					Uma seleção dos meus trabalhos com foco em design funcional e boas
+					Uma seleção dos meus trabalhos com foco em design atrativo e boas
 					práticas de desenvolvimento. <br />
 					<span className="text-sm text-green-500">
-						Observação: Os projetos realizados com WordPress eu desenvolvi
-						enquanto estava trabalhando em uma agência de marketing digital,
-						chamada Pixel12Digital.
+						Observação: Os projetos "Tânia Neves", "Green Gold" e "Questy"
+						realizados com WordPress, eu desenvolvi enquanto estava trabalhando
+						numa agência chamada Pixel12Digital.
 					</span>
 				</p>
 			</motion.section>

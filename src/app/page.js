@@ -16,6 +16,7 @@ import {
 	faJs,
 	faLinkedinIn,
 	faReact,
+	faWhatsapp,
 	faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -29,11 +30,11 @@ import projects from "@/data/my-projects.json";
 
 export default function Home() {
 	const skills = [
-		{ name: "HTML", color: "red", icon: faHtml5 },
-		{ name: "CSS", color: "blue", icon: faCss3 },
-		{ name: "JavaScript", color: "yellow", icon: faJs },
-		{ name: "React", color: "cyan", icon: faReact },
-		{ name: "WordPress", color: "gray", icon: faWordpress },
+		{ name: "HTML", color: "red-400", icon: faHtml5 },
+		{ name: "CSS", color: "blue-400", icon: faCss3 },
+		{ name: "JavaScript", color: "yellow-400", icon: faJs },
+		{ name: "React", color: "cyan-400", icon: faReact },
+		{ name: "WordPress", color: "gray-300", icon: faWordpress },
 	];
 
 	const fadeUp = {
@@ -60,10 +61,9 @@ export default function Home() {
 					</h2>
 
 					<p className="text-base sm:text-lg md:text-xl mb-5 text-gray-300">
-						Transformo ideias em experiências digitais modernas, funcionais e
-						intuitivas. <br />
-						Este é o meu portfólio, onde compartilho meus projetos, habilidades
-						e visão criativa.
+						Transformo ideias em experiências digitais modernas que fortalecem a
+						presença online de marcas <br />
+						Aqui você encontra meus projetos, habilidades e visão criativa.
 					</p>
 
 					{/* Redes Sociais */}
@@ -169,10 +169,10 @@ export default function Home() {
 							</li>
 						</ul>
 						<p className="text-base sm:text-lg text-gray-800 mb-4">
-							Sou um profissional apaixonado por criar experiências digitais que
-							unem design e tecnologia. <br className="hidden sm:inline" />
-							Formado em Design de Mídias Digitais pela FATEC Barueri e cursando
-							desenvolvimento web front-end, aplico meus conhecimentos em
+							Sou um profissional focado em criar experiências digitais que unem
+							design e tecnologia. <br className="hidden sm:inline" />
+							Formado em Design de Mídias Digitais pela FATEC Barueri e
+							aprimorando meus conhecimentos de desenvolvimento web, crio
 							projetos que exigem atenção aos detalhes, responsividade e foco na
 							experiência do usuário.
 						</p>
@@ -280,7 +280,8 @@ export default function Home() {
 					className="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
 					variants={fadeUp}
 				>
-					Estou sempre em busca de novos desafios e projetos interessantes. <br/>
+					Estou sempre em busca de novos desafios e projetos interessantes.{" "}
+					<br />
 					Entre em contato comigo para fazermos uma parceria ou discutirmos como
 					posso ajudar no seu projeto!
 				</motion.p>
@@ -314,6 +315,11 @@ export default function Home() {
 							},
 							{
 								id: 2,
+								icon: faWhatsapp,
+								url: "https://wa.me/5511943834648",
+							},
+							{
+								id: 3,
 								icon: faGithub,
 								url: "https://github.com/ed-matheus",
 							},
