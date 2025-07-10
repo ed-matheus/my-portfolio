@@ -115,7 +115,7 @@ export default function Home() {
 			{/* Seção Sobre mim */}
 			<motion.section
 				id="sobre"
-				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-[url('/images/textura-papel.jpg')] bg-center lg:bg-linear-to-r from-cyan to-light"
+				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-[url('/images/textura-papel.jpg')] bg-center"
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}
