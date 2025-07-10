@@ -27,7 +27,7 @@ const Sobre = () => {
 	};
 
 	return (
-		<div className="flex flex-col justify-center items-center text-center w-full text-white lg:text-start">
+		<div className="flex flex-col justify-center items-center text-center w-full lg:text-start">
 			{/* SEÇÃO: Quem sou eu */}
 			<motion.section
 				className="flex flex-col lg:flex-row justify-center items-center w-full px-10 md:px-15 lg:px-20 xl:px-35 py-18 xl:py-20 gap-10"
@@ -41,7 +41,7 @@ const Sobre = () => {
 					<Image
 						src="/images/matheus.png"
 						alt="Matheus trabalhando"
-						className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-lg shadow-green-600"
+						className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] object-cover rounded-xl shadow-lg shadow-cyan-h"
 						width={320}
 						height={320}
 						priority
@@ -109,27 +109,27 @@ const Sobre = () => {
 				</p>
 				<ul className="grid grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 lg:gap-8 text-sm md:text-lg list-inside my-8 w-62 md:w-75 lg:w-full mx-auto">
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faReact} className="text-2xl" />
+						<FontAwesomeIcon icon={faReact} className="text-2xl text-cyan" />
 						React / Next.js
 					</li>
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faGitAlt} className="text-2xl" />
+						<FontAwesomeIcon icon={faGitAlt} className="text-2xl text-orange-600" />
 						Git
 					</li>
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faWordpress} className="text-2xl" />
+						<FontAwesomeIcon icon={faWordpress} className="text-2xl text-gray-300" />
 						WordPress
 					</li>
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faFigma} className="text-2xl" />
+						<FontAwesomeIcon icon={faFigma} className="text-2xl text-red-700" />
 						Figma
 					</li>
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faPencil} className="text-2xl" />
+						<FontAwesomeIcon icon={faPencil} className="text-2xl text-purple-700" />
 						Photoshop
 					</li>
 					<li className="flex items-center gap-2">
-						<FontAwesomeIcon icon={faPencilSquare} className="text-2xl" />
+						<FontAwesomeIcon icon={faPencilSquare} className="text-2xl text-orange-400" />
 						Illustrator
 					</li>
 				</ul>

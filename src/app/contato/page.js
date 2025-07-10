@@ -85,7 +85,7 @@ const Contato = () => {
 							required
 							value={name}
 							onChange={(e) => setName(e.target.value)}
-							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-cyan transition"
 						/>
 					</div>
 
@@ -100,7 +100,7 @@ const Contato = () => {
 							required
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-cyan transition"
 						/>
 					</div>
 
@@ -115,13 +115,13 @@ const Contato = () => {
 							required
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
-							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+							className="mt-1 w-full px-4 py-2 border rounded-md bg-zinc-800 text-light focus:outline-none focus:ring-2 focus:ring-cyan transition"
 						/>
 					</div>
 
 					<button
 						type="submit"
-						className="w-full bg-green-500 hover:bg-green-600 hover:cursor-pointer text-light font-semibold py-2 px-4 rounded-md transition duration-300"
+						className="w-full bg-cyan hover:bg-cyan-h hover:cursor-pointer text-light font-semibold py-2 px-4 rounded-md transition duration-300"
 					>
 						Enviar Mensagem
 					</button>
@@ -136,7 +136,7 @@ const Contato = () => {
 							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
 							target="_blank"
 							rel="noreferrer"
-							className="hover:text-green-500 flex items-center gap-2"
+							className="hover:text-cyan flex items-center gap-2"
 						>
 							<FontAwesomeIcon icon={faLinkedin} className="w-[1.2rem]" />
 							LinkedIn
@@ -145,7 +145,7 @@ const Contato = () => {
 							href="https://github.com/ed-matheus"
 							target="_blank"
 							rel="noreferrer"
-							className="hover:text-green-500 flex items-center gap-2"
+							className="hover:text-cyan flex items-center gap-2"
 						>
 							<FontAwesomeIcon icon={faGithub} className="w-[1.2rem]" />
 							GitHub

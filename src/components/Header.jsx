@@ -27,11 +27,11 @@ const Header = () => {
   const iconClose = <FontAwesomeIcon icon={faXmark} className="w-5 h-5" />;
 
   return (
-    <header className="flex justify-between items-center px-6 md:px-5 lg:px-10 xl:px-20 py-5 text-light bg-dark border-b-2 border-green-500 relative z-50">
+    <header className="flex justify-between items-center px-6 md:px-5 lg:px-10 xl:px-20 py-5 text-light bg-dark border-b-2 border-cyan relative z-50">
       {/* Logo */}
       <Link
         href="/"
-        className="text-green-500 text-xl md:text-[1.2rem] font-black"
+        className="text-cyan text-xl md:text-[1.2rem] font-black"
       >
         Matheus Costa
       </Link>
@@ -46,14 +46,14 @@ const Header = () => {
                 <Link
                   href={item.path}
                   className={`relative transition-colors ${
-                    isActive ? "text-green-500" : "hover:text-green-500"
+                    isActive ? "text-cyan" : "hover:text-cyan-h"
                   }`}
                 >
                   {item.name}
                   {isActive && (
                     <motion.span
                       layoutId="underline"
-                      className="absolute -bottom-1 left-0 w-full h-[2px] bg-green-500"
+                      className="absolute -bottom-1 left-0 w-full h-[2px] bg-cyan"
                     />
                   )}
                 </Link>
@@ -75,7 +75,7 @@ const Header = () => {
       {/* Botão Hamburger Mobile */}
       <button
         type="button"
-        className="md:hidden text-green-500"
+        className="md:hidden text-cyan cursor-pointer"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Abrir menu"
       >
@@ -99,7 +99,7 @@ const Header = () => {
                   key={item.id}
                   href={item.path}
                   className={`${
-                    isActive ? "text-green-500" : "hover:text-green-500"
+                    isActive ? "text-cyan" : "hover:text-cyan"
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >

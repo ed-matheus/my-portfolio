@@ -6,7 +6,7 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-5 px-8 bg-green-500 flex justify-between items-center">
+    <footer className="w-full py-5 px-8 bg-cyan flex justify-between items-center">
       <p className="text-sm font-medium text-light">
         Site desenvolvido totalmente em código com Next.js, pelo próprio{" "}
         <span className="text-dark font-bold">Edson Matheus</span>

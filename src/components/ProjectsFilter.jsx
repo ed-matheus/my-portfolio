@@ -10,8 +10,8 @@ const ProjectsFilter = ({ selectedCategory, setSelectedCategory }) => {
           onClick={() => setSelectedCategory(category)}
           className={`w-[7rem] md:w-[8rem] px-4 py-2 rounded-full transition ${
             selectedCategory === category
-              ? "bg-green-500 text-light"
-              : "bg-gray-200 text-gray-700 hover:bg-green-500 hover:text-light cursor-pointer"
+              ? "bg-cyan text-light"
+              : "bg-gray-200 text-dark hover:bg-cyan hover:text-light cursor-pointer"
           }`}
         >
           <span className="text-sm md:text-[1rem]">{category}</span>

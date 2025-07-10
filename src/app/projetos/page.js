@@ -62,7 +62,7 @@ const Projetos = () => {
 				<p className="text-lg text-gray-300">
 					Uma seleção dos meus trabalhos com foco em design atrativo e boas
 					práticas de desenvolvimento. <br />
-					<span className="text-sm text-green-500">
+					<span className="text-sm text-cyan">
 						Observação: Os projetos Tânia Neves, Green Gold e Questy realizados
 						com WordPress, eu desenvolvi enquanto estava trabalhando numa
 						agência chamada Pixel12Digital.
@@ -91,7 +91,7 @@ const Projetos = () => {
 				initial="hidden"
 				animate="visible"
 				transition={{ delay: 0.4 }}
-				className="text-center text-md md:text-lg mt-4 text-green-500"
+				className="text-center text-md md:text-lg mt-4 text-cyan"
 			>
 				{qtdProjetos} projetos
 			</motion.h3>
@@ -117,7 +117,7 @@ const Projetos = () => {
 					))}
 				</motion.section>
 
-				<hr className="w-full text-green-500 border-2 rounded mt-10" />
+				<hr className="w-full text-light border-2 rounded mt-10" />
 
 				{/* Call to Action */}
 				<motion.div

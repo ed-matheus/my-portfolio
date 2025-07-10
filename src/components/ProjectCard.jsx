@@ -18,11 +18,11 @@ const ProjectCard = ({ img, name, desc, skills, link, codeLink }) => {
         <span className="text-sm lg:text-[0.8rem]">{desc}</span>
 
         {/* Skills */}
-        <ul className="flex flex-wrap gap-2 text-sm text-white">
+        <ul className="flex flex-wrap gap-2 text-sm">
           {skills.map((skill) => (
             <li
               key={skill.id}
-              className="bg-green-400 text-dark font-semibold px-2 py-1 rounded-full text-xs"
+              className="bg-cyan-h text-dark font-semibold px-2 py-1 rounded-full text-xs"
             >
               {skill.name}
             </li>

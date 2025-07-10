@@ -91,7 +91,7 @@ export default function Home() {
 									variants={fadeUp}
 									whileHover={{ scale: 1.1 }}
 									type="button"
-									className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:bg-green-500 hover:text-light hover:cursor-pointer transition"
+									className="border-2 border-cyan text-cyan p-2 rounded-full hover:bg-cyan hover:text-light hover:cursor-pointer transition"
 								>
 									<FontAwesomeIcon icon={social.icon} className="w-[1.2rem]" />
 								</motion.button>
@@ -115,7 +115,7 @@ export default function Home() {
 			{/* Seção Sobre mim */}
 			<motion.section
 				id="sobre"
-				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-linear-to-b lg:bg-linear-to-r from-green-500 to-light"
+				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-[url('/images/textura-papel.jpg')] bg-center lg:bg-linear-to-r from-cyan to-light"
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}
@@ -142,33 +142,33 @@ export default function Home() {
 						className="flex flex-col items-center w-full lg:w-1/2 xl:w-[35rem] lg:items-start text-center lg:text-left mb-[-1rem]"
 						variants={fadeUp}
 					>
-						<h3 className="text-[1.4rem] sm:text-3xl font-bold text-green-600 mb-4">
+						<h3 className="text-[1.4rem] sm:text-3xl font-bold text-dark mb-4">
 							Sobre mim
 						</h3>
-						<ul className="flex items-center justify-between text-[0.9rem] lg:text-[1rem] my-5 text-dark gap-6">
+						<ul className="flex flex-wrap items-center justify-center lg:justify-start w-full text-[1rem] lg:text-[1rem] my-5 text-dark gap-5 md:gap-18 lg:gap-5">
 							<li>
 								<FontAwesomeIcon
 									icon={faPenRuler}
-									className="me-1 text-green-600"
+									className="me-1 text-cyan"
 								/>
 								Web Design
 							</li>
 							<li>
 								<FontAwesomeIcon
 									icon={faCode}
-									className="me-1 text-green-600"
+									className="me-1 text-cyan"
 								/>
 								Front-end
 							</li>
 							<li>
 								<FontAwesomeIcon
 									icon={faUsers}
-									className="me-1 text-green-600"
+									className="me-1 text-cyan"
 								/>
 								Design UX/UI
 							</li>
 						</ul>
-						<p className="text-base sm:text-lg text-gray-800 mb-4">
+						<p className="text-base sm:text-lg text-dark mb-4">
 							Sou um profissional focado em criar experiências digitais que unem
 							design e tecnologia. <br className="hidden sm:inline" />
 							Formado em Design de Mídias Digitais pela FATEC Barueri e
@@ -176,7 +176,7 @@ export default function Home() {
 							projetos que exigem atenção aos detalhes, responsividade e foco na
 							experiência do usuário.
 						</p>
-						<p className="text-base sm:text-lg text-gray-800">
+						<p className="text-base sm:text-lg text-dark">
 							Busco oportunidades onde possa crescer, aprender e colaborar com
 							pessoas que valorizam o impacto do design na vida das pessoas.
 						</p>
@@ -198,7 +198,7 @@ export default function Home() {
 				transition={{ staggerChildren: 0.15 }}
 			>
 				<motion.div className="max-w-6xl mx-auto text-center" variants={fadeUp}>
-					<h3 className="text-[1.4rem] sm:text-3xl font-bold text-center text-green-500 mb-10">
+					<h3 className="text-[1.4rem] sm:text-3xl font-bold text-center text-cyan mb-10">
 						Minhas habilidades
 					</h3>
 
@@ -270,7 +270,7 @@ export default function Home() {
 				transition={{ staggerChildren: 0.2 }}
 			>
 				<motion.h3
-					className="text-[1.4rem] sm:text-3xl font-bold text-green-500 mb-6"
+					className="text-[1.4rem] sm:text-3xl font-bold text-cyan mb-6"
 					variants={fadeUp}
 				>
 					Vamos trabalhar juntos?
@@ -299,7 +299,7 @@ export default function Home() {
 						E-mail:{" "}
 						<a
 							href="mailto:edsonmatheus02@hotmail.com"
-							className="underline hover:text-green-500"
+							className="underline hover:text-cyan"
 						>
 							edsonmatheus02@hotmail.com
 						</a>
@@ -334,7 +334,7 @@ export default function Home() {
 									variants={fadeUp}
 									whileHover={{ scale: 1.1 }}
 									type="button"
-									className="border-2 border-green-500 text-green-500 p-2 rounded-full hover:bg-green-500 hover:text-light hover:cursor-pointer transition"
+									className="border-2 border-cyan text-cyan p-2 rounded-full hover:bg-cyan hover:text-light hover:cursor-pointer transition"
 								>
 									<FontAwesomeIcon icon={social.icon} className="w-[1.2rem]" />
 								</motion.button>
