@@ -115,7 +115,7 @@ export default function Home() {
 			{/* Seção Sobre mim */}
 			<motion.section
 				id="sobre"
-				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-[url('/images/textura-papel.jpg')] bg-center"
+				className="w-full px-6 py-12 lg:px-20 lg:py-20 bg-[url('/images/textura-papel.jpg')] bg-center bg-cover bg-no-repeat"
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true }}
