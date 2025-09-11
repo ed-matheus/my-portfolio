@@ -1,5 +1,7 @@
 import { Sora, Urbanist } from "next/font/google";
 import "./globals.css";
+
+// Componentes
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -24,9 +26,9 @@ export const metadata = {
 	description: "Desenvolvedor WordPress e Front-end.",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="pt">
 			<body
 				className={`${sora.variable} ${urbanist.variable} antialiased bg-dark-500`}
 			>

@@ -10,9 +10,9 @@ import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 import {
 	faCss3,
-	faFacebook,
 	faGithub,
 	faHtml5,
+	faInstagram,
 	faJs,
 	faLinkedinIn,
 	faReact,
@@ -71,8 +71,8 @@ export default function Home() {
 						{[
 							{
 								id: 1,
-								icon: faFacebook,
-								url: "https://www.facebook.com/edson.matheus.372/",
+								icon: faInstagram,
+								url: "https://www.instagram.com/edmatheuss.web/",
 							},
 							{
 								id: 2,
@@ -147,24 +147,15 @@ export default function Home() {
 						</h3>
 						<ul className="flex flex-wrap items-center justify-center lg:justify-start w-full text-[1rem] lg:text-[1rem] my-5 text-dark gap-5 md:gap-18 lg:gap-5">
 							<li>
-								<FontAwesomeIcon
-									icon={faPenRuler}
-									className="me-1 text-cyan"
-								/>
+								<FontAwesomeIcon icon={faPenRuler} className="me-1 text-cyan" />
 								Web Design
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faCode}
-									className="me-1 text-cyan"
-								/>
+								<FontAwesomeIcon icon={faCode} className="me-1 text-cyan" />
 								Front-end
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faUsers}
-									className="me-1 text-cyan"
-								/>
+								<FontAwesomeIcon icon={faUsers} className="me-1 text-cyan" />
 								Design UX/UI
 							</li>
 						</ul>

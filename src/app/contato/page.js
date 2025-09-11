@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Ícones
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contato = () => {
 	const [name, setName] = useState("");
@@ -132,6 +132,15 @@ const Contato = () => {
 				<div className="my-20 text-center">
 					<p className="text-gray-400 mb-5">Ou entre em contato pelas redes:</p>
 					<div className="flex flex-col md:flex-row items-center justify-center gap-10">
+						<a
+							href="https://www.instagram.com/edmatheuss.web/"
+							target="_blank"
+							rel="noreferrer"
+							className="hover:text-cyan flex items-center gap-2"
+						>
+							<FontAwesomeIcon icon={faInstagram} className="w-[1.2rem]" />
+							Instagram
+						</a>
 						<a
 							href="https://www.linkedin.com/in/edson-matheus-b5a0171ba/"
 							target="_blank"
