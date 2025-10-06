@@ -9,15 +9,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importando 
 import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 import {
-	faCss3,
 	faGithub,
-	faHtml5,
 	faInstagram,
-	faJs,
 	faLinkedinIn,
-	faReact,
 	faWhatsapp,
-	faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Componentes
@@ -30,11 +25,42 @@ import projects from "@/data/my-projects.json";
 
 export default function Home() {
 	const skills = [
-		{ name: "HTML", color: "red-400", icon: faHtml5 },
-		{ name: "CSS", color: "blue-400", icon: faCss3 },
-		{ name: "JavaScript", color: "yellow-400", icon: faJs },
-		{ name: "React", color: "cyan-400", icon: faReact },
-		{ name: "WordPress", color: "gray-300", icon: faWordpress },
+		{
+			name: "HTML",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+		},
+		{
+			name: "CSS",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+		},
+		{
+			name: "JavaScript",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+		},
+		{
+			name: "React",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+		},
+		{
+			name: "Next.js",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+		},
+		{
+			name: "Tailwind CSS",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+		},
+		{
+			name: "WordPress",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
+		},
+		{
+			name: "Git",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+		},
+		{
+			name: "GitHub",
+			icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+		},
 	];
 
 	const fadeUp = {
@@ -43,27 +69,29 @@ export default function Home() {
 	};
 
 	return (
-		<main className="">
+		<main>
 			{/* Hero Section (Seção inicial da Homepage / Apresentação) */}
 			<motion.section
 				initial="hidden"
 				animate="visible"
 				transition={{ staggerChildren: 0.2 }}
-				className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-20 lg:py-18 bg-dark gap-10 lg:gap-20"
+				className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
 			>
 				<motion.div
 					variants={fadeUp}
-					className="text-center lg:text-left xl:max-w-[42rem]"
+					className="text-start lg:text-left xl:max-w-[42rem]"
 				>
-					<h2 className="mb-5 text-xl sm:text-2xl md:text-3xl font-bold text-light">
-						Olá, me chamo Matheus <br /> Designer de Interfaces e Desenvolvedor
-						Front-end
+					<h2 className="mb-2 text-xl sm:text-3xl md:text-5xl font-bold">
+						Edson Matheus
 					</h2>
+
+					<h3 className="mb-5 text-xl sm:text-2xl">
+						Desenvolvedor Front-End e Designer Gráfico
+					</h3>
 
 					<p className="text-base sm:text-lg md:text-xl mb-5 text-gray-300">
 						Transformo ideias em experiências digitais modernas que fortalecem a
-						presença online de marcas <br />
-						Aqui você encontra meus projetos, habilidades e visão criativa.
+						presença online de marcas.
 					</p>
 
 					{/* Redes Sociais */}
@@ -142,7 +170,7 @@ export default function Home() {
 						className="flex flex-col items-center w-full lg:w-1/2 xl:w-[35rem] lg:items-start text-center lg:text-left mb-[-1rem]"
 						variants={fadeUp}
 					>
-						<h3 className="text-[1.4rem] sm:text-3xl font-bold text-dark mb-4">
+						<h3 className="text-[1.4rem] sm:text-4xl font-bold text-dark mb-4">
 							Sobre mim
 						</h3>
 						<ul className="flex flex-wrap items-center justify-center lg:justify-start w-full text-[1rem] lg:text-[1rem] my-5 text-dark gap-5 md:gap-18 lg:gap-5">
@@ -161,7 +189,9 @@ export default function Home() {
 						</ul>
 						<p className="text-base sm:text-lg text-dark mb-4">
 							Sou um profissional focado em criar experiências digitais que unem
-							design e tecnologia. <br className="hidden sm:inline" />
+							design e tecnologia.
+						</p>
+						<p className="text-base sm:text-lg text-dark mb-4">
 							Formado em Design de Mídias Digitais pela FATEC Barueri e
 							aprimorando meus conhecimentos de desenvolvimento web, crio
 							projetos que exigem atenção aos detalhes, responsividade e foco na
@@ -189,9 +219,15 @@ export default function Home() {
 				transition={{ staggerChildren: 0.15 }}
 			>
 				<motion.div className="max-w-6xl mx-auto text-center" variants={fadeUp}>
-					<h3 className="text-[1.4rem] sm:text-3xl font-bold text-center text-cyan mb-10">
-						Minhas habilidades
-					</h3>
+					<motion.h2
+						className="text-[1.4rem] sm:text-4xl font-bold text-center text-cyan mb-3"
+						variants={fadeUp}
+					>
+						Tecnologias
+					</motion.h2>
+					<p className="text-lg font-medium sm:text-xl text-center text-light mb-14">
+						As principais tecnologias que eu domino e utilizo
+					</p>
 
 					<motion.div
 						className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 content-center"
@@ -203,11 +239,7 @@ export default function Home() {
 								variants={fadeUp}
 								transition={{ delay: index * 0.1 }}
 							>
-								<Skill
-									name={skill.name}
-									iconColor={skill.color}
-									iconName={skill.icon}
-								/>
+								<Skill name={skill.name} icon={skill.icon} />
 							</motion.div>
 						))}
 					</motion.div>
@@ -223,7 +255,7 @@ export default function Home() {
 				transition={{ staggerChildren: 0.2 }}
 			>
 				<motion.h2
-					className="text-2xl md:text-3xl font-bold text-center"
+					className="text-2xl md:text-4xl font-bold text-center"
 					variants={fadeUp}
 				>
 					Projetos
