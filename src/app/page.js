@@ -79,9 +79,9 @@ export default function Home() {
 			>
 				<motion.div
 					variants={fadeUp}
-					className="text-start lg:text-left xl:max-w-[42rem]"
+					className="text-center lg:text-left xl:max-w-[42rem]"
 				>
-					<h2 className="mb-2 text-xl sm:text-3xl md:text-5xl font-bold">
+					<h2 className="mb-2 text-3xl sm:text-3xl md:text-5xl font-bold">
 						Edson Matheus
 					</h2>
 
@@ -170,7 +170,7 @@ export default function Home() {
 						className="flex flex-col items-center w-full lg:w-1/2 xl:w-[35rem] lg:items-start text-center lg:text-left mb-[-1rem]"
 						variants={fadeUp}
 					>
-						<h3 className="text-[1.4rem] sm:text-4xl font-bold text-dark mb-4">
+						<h3 className="text-3xl sm:text-4xl font-bold text-dark mb-4">
 							Sobre mim
 						</h3>
 						<ul className="flex flex-wrap items-center justify-center lg:justify-start w-full text-[1rem] lg:text-[1rem] my-5 text-dark gap-5 md:gap-18 lg:gap-5">
@@ -220,7 +220,7 @@ export default function Home() {
 			>
 				<motion.div className="max-w-6xl mx-auto text-center" variants={fadeUp}>
 					<motion.h2
-						className="text-[1.4rem] sm:text-4xl font-bold text-center text-cyan mb-3"
+						className="text-3xl sm:text-4xl font-bold text-center text-cyan mb-3"
 						variants={fadeUp}
 					>
 						Tecnologias
@@ -255,7 +255,7 @@ export default function Home() {
 				transition={{ staggerChildren: 0.2 }}
 			>
 				<motion.h2
-					className="text-2xl md:text-4xl font-bold text-center"
+					className="text-3xl md:text-4xl font-bold text-center"
 					variants={fadeUp}
 				>
 					Projetos
@@ -293,7 +293,7 @@ export default function Home() {
 				transition={{ staggerChildren: 0.2 }}
 			>
 				<motion.h3
-					className="text-[1.4rem] sm:text-3xl font-bold text-cyan mb-6"
+					className="text-3xl sm:text-3xl font-bold text-cyan mb-6"
 					variants={fadeUp}
 				>
 					Vamos trabalhar juntos?
