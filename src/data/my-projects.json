@@ -138,5 +138,18 @@
     ],
     "category": "Em Código",
     "codeLink": "https://github.com/ed-matheus/agenda-app"
+  },
+  {
+    "img": "nimbus-weather.png",
+    "name": "Nimbus Weather",
+    "desc": "Um app de clima com funcionalidades extras de previsão do tempo e pesquisa de cidades, com a API OpenWeather. Criado totalmente sem framework ou bibliotecas!",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" }
+    ],
+    "category": "Em Código",
+    "link": "https://ed-matheus.github.io/nimbus-weather/index.html",
+    "codeLink": "https://github.com/ed-matheus/nimbus-weather"
   }
 ]

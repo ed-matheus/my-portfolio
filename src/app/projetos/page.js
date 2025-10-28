@@ -24,7 +24,7 @@ const Projetos = () => {
 			: projects.filter((p) => p.category === selectedCategory);
 
 	const qtdProjetos = filteredProjects.length;
-	console.log(filteredProjects.length);
+	// console.log(filteredProjects.length);
 
 	// variantes
 	const fadeUp = {
