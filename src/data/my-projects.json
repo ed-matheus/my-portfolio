@@ -46,6 +46,19 @@
     "link": "https://questysolucoesho.com.br/"
   },
   {
+    "img": "karbonna.png",
+    "name": "Sociedade Karbonna LP",
+    "desc": "Landing Page completa para captação e conversão de leads, desenvolvida com WordPress para uma marca de design chamada Karbonna.",
+    "skills": [
+      { "id": 1, "name": "WordPress" },
+      { "id": 2, "name": "Elementor" },
+      { "id": 3, "name": "HTML" },
+      { "id": 4, "name": "CSS" }
+    ],
+    "category": "WordPress",
+    "link": "https://karbonna.com.br/sociedade-karbonna-pv/"
+  },
+  {
     "img": "huddle.png",
     "name": "Huddle Landing Page",
     "desc": "Uma Landing Page / Página de captação que apresenta uma agência fictícia com o nome de Huddle. Desafio do Frontend Mentor.",
