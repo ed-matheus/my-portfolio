@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importando FontAwesome
+import { Typewriter } from "react-simple-typewriter";
 
 // Ícones do FontAwesome
 import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
@@ -75,7 +76,7 @@ export default function Home() {
 				initial="hidden"
 				animate="visible"
 				transition={{ staggerChildren: 0.2 }}
-				className="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
+				className="flex flex-col-reverse lg:flex-row justify-center items-center w-full h-180 px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
 			>
 				<motion.div
 					variants={fadeUp}
@@ -86,7 +87,16 @@ export default function Home() {
 					</h2>
 
 					<h3 className="mb-5 text-xl sm:text-2xl">
-						Desenvolvedor Front-End e Designer Gráfico
+						<Typewriter
+							words={['Desenvolvedor Web', 'Front-End Developer', 'Designer Digital']}
+							loop={0}
+							cursor
+							cursorStyle='_'
+							typeSpeed={80}
+							deleteSpeed={50}
+							delaySpeed={1500}
+						/>
+						{/* Desenvolvedor Front-End e Designer Gráfico */}
 					</h3>
 
 					<p className="text-base sm:text-lg md:text-xl mb-5 text-gray-300">
@@ -95,7 +105,7 @@ export default function Home() {
 					</p>
 
 					{/* Redes Sociais */}
-					<div className="flex justify-center lg:justify-start items-center gap-4">
+					<div className="flex justify-center lg:justify-start items-center gap-6 mt-10">
 						{[
 							{
 								id: 1,
@@ -134,9 +144,15 @@ export default function Home() {
 					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
 					width={192}
 					height={192}
-					initial={{ opacity: 0, scale: 0.9 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.6 }}
+					animate={{ y: [0, -15, 0] }} // Move 15px para cima e volta
+					transition={{
+						duration: 4,      // Tempo de cada ciclo
+						repeat: Infinity, // Loop infinito
+						ease: "easeInOut" // Suaviza a aceleração
+					}}
+					// initial={{ opacity: 0, scale: 0.9 }}
+					// animate={{ opacity: 1, scale: 1 }}
+					// transition={{ duration: 0.6 }}
 				/>
 			</motion.section>
 
