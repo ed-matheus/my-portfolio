@@ -157,7 +157,7 @@ export default function Home() {
 				</motion.div>
 
 				<motion.div
-					className="flex justify-center mt-5 lg:hidden"
+					className="flex justify-center mt-8 lg:hidden"
 					animate={{ y: [0, 8, 0] }} // Move 8px para cima e volta
 					transition={{
 						duration: 2,
