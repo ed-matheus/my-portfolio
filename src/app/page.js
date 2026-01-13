@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Importando FontAwesome
 import { Typewriter } from "react-simple-typewriter";
 
-// Ícones do FontAwesome
+// Ícones
 import { faCode, faPenRuler, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { IoIosArrowDown } from "react-icons/io";
 
 import {
 	faGithub,
@@ -76,14 +77,31 @@ export default function Home() {
 				initial="hidden"
 				animate="visible"
 				transition={{ staggerChildren: 0.2 }}
-				className="flex flex-col-reverse lg:flex-row justify-center items-center w-full h-180 px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
+				className="flex flex-col lg:flex-row justify-center items-center w-full h-180 px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
 			>
+				<motion.img
+					src="/me.png"
+					alt="Foto de Matheus"
+					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
+					width={192}
+					height={192}
+					animate={{ y: [0, -15, 0] }} // Move 15px para cima e volta
+					transition={{
+						duration: 4,      // Tempo de cada ciclo
+						repeat: Number.POSITIVE_INFINITY, // Loop infinito
+						ease: "easeInOut" // Suaviza a aceleração
+					}}
+					// initial={{ opacity: 0, scale: 0.9 }}
+					// animate={{ opacity: 1, scale: 1 }}
+					// transition={{ duration: 0.6 }}
+				/>
+
 				<motion.div
 					variants={fadeUp}
 					className="text-center lg:text-left xl:max-w-[42rem]"
 				>
 					<h2 className="mb-2 text-3xl sm:text-3xl md:text-5xl font-bold">
-						Edson Matheus
+						Matheus Costa
 					</h2>
 
 					<h3 className="mb-5 text-xl sm:text-2xl">
@@ -138,22 +156,17 @@ export default function Home() {
 					</div>
 				</motion.div>
 
-				<motion.img
-					src="/me.png"
-					alt="Foto de Matheus"
-					className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-[25rem] lg:h-[25rem] object-cover"
-					width={192}
-					height={192}
-					animate={{ y: [0, -15, 0] }} // Move 15px para cima e volta
+				<motion.div
+					className="flex justify-center mt-10 lg:hidden"
+					animate={{ y: [0, 8, 0] }} // Move 8px para cima e volta
 					transition={{
-						duration: 4,      // Tempo de cada ciclo
-						repeat: Infinity, // Loop infinito
-						ease: "easeInOut" // Suaviza a aceleração
+						duration: 2,
+						repeat: Number.POSITIVE_INFINITY, 
+						ease: "easeInOut" 
 					}}
-					// initial={{ opacity: 0, scale: 0.9 }}
-					// animate={{ opacity: 1, scale: 1 }}
-					// transition={{ duration: 0.6 }}
-				/>
+				>
+					<IoIosArrowDown size={25} />
+				</motion.div>
 			</motion.section>
 
 			{/* Seção Sobre mim */}

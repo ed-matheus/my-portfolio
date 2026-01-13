@@ -31,7 +31,7 @@ const Header = () => {
       {/* Logo */}
       <Link
         href="/"
-        className="text-cyan text-xl md:text-[1.2rem] font-black"
+        className="text-cyan text-md md:text-[1.2rem] font-black"
       >
         Matheus Costa
       </Link>
