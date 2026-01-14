@@ -132,7 +132,7 @@
       { "id": 2, "name": "CSS" },
       { "id": 3, "name": "TypeScript" },
       { "id": 4, "name": "Next.js" },
-      { "id": 5, "name": "Tailwind" }
+      { "id": 5, "name": "Tailwind CSS" }
     ],
     "category": "Em Código",
     "link": "https://browser-extensions-manager-by-edmath.netlify.app/",
@@ -147,7 +147,7 @@
       { "id": 2, "name": "CSS" },
       { "id": 3, "name": "TypeScript" },
       { "id": 4, "name": "Next.js" },
-      { "id": 5, "name": "Tailwind" }
+      { "id": 5, "name": "Tailwind CSS" }
     ],
     "category": "Em Código",
     "codeLink": "https://github.com/ed-matheus/agenda-app"
@@ -164,5 +164,20 @@
     "category": "Em Código",
     "link": "https://ed-matheus.github.io/nimbus-weather/index.html",
     "codeLink": "https://github.com/ed-matheus/nimbus-weather"
+  },
+  {
+    "img": "taskmaster.png",
+    "name": "Task Master",
+    "desc": "Lista de tarefas, mas com um diferencial: a lista de compras. Duas listas distintas mas dentro do mesmo app, com a possibilidade de dividir tarefas e deveres do dia de forma organizada.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" },
+      { "id": 4, "name": "React" },
+      { "id": 5, "name": "Tailwind CSS" }
+    ],
+    "category": "Em Código",
+    "link": "https://react-task-master-seven.vercel.app/",
+    "codeLink": "https://github.com/ed-matheus/React-Task-Master"
   }
 ]
