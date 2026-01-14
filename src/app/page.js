@@ -77,7 +77,7 @@ export default function Home() {
 				initial="hidden"
 				animate="visible"
 				transition={{ staggerChildren: 0.2 }}
-				className="flex flex-col lg:flex-row justify-center items-center w-full h-180 px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
+				className="flex flex-col lg:flex-row-reverse justify-center items-center w-full h-180 px-6 lg:px-20 py-20 lg:py-18 bg-dark text-light gap-10 lg:gap-20"
 			>
 				<motion.img
 					src="/me.png"
