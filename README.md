@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏆 Task Master Pro: 3D-Gamified Edition
 
-## Getting Started
+> **Acesse o projeto:** https://react-task-master-seven.vercel.app/
 
-First, run the development server:
+O **Task Master Pro** é um gerenciador de tarefas moderno e intuitivo, desenvolvido com foco em alta performance e experiência do usuário (UX). O projeto destaca-se pela capacidade de alternar contextos entre **Tarefas Diárias** e **Lista de Compras**, mantendo uma interface limpa e animações fluidas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📸 Preview do Projeto
+<div style="display: flex; justify-content: space-around; border: 1px solid red;">
+  <div align="center">
+    <img 
+      src="./assets/print-home.png" 
+      alt="Página inicial" 
+      width="180"
+      style="border-radius: 8px;"
+    >
+    <p><i>Visual moderno com foco em produtividade.</i></p>
+  </div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <div align="center">
+    <img 
+      src="./assets/print-modal.png" 
+      alt="Página inicial" 
+      width="180"
+      style="border-radius: 8px;"
+    >
+    <p><i>Segurança nas ações destrutivas.</i></p>
+  </div>
+</div>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Funcionalidades
 
-## Learn More
+- **Dual View System:** Alterne entre listas de tarefas e compras com estados independentes.
+- **Gestão Eficiente:** Adição e exclusão de itens em tempo real.
+- **UX Inteligente:** - Dropdown de opções com fechamento automático ao clicar fora.
+  - Modal de confirmação para ações destrutivas (Limpar Lista).
+- **Animações Suaves:** Transições leves via Tailwind CSS e Keyframes para uma sensação de aplicativo nativo.
+- **Responsividade:** Layout adaptado para Desktop e dispositivos Mobile.
+- **Gamificação (Em breve):** Sistema de recompensas e XP ao completar tarefas. 🚀
+- **Edição de Itens (Em breve):** Possibilidade de renomear tarefas já criadas. ✍️
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Tecnologias Utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este projeto utiliza o que há de mais moderno no ecossistema **React**:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **React.js** (Hooks: `useState`, `useEffect`, `useRef`, `useMemo`)
+* **Tailwind CSS** (Estilização baseada em utilitários e transições)
+* **React Icons** (Identidade visual clara e moderna)
+* **JavaScript (ES6+)**
