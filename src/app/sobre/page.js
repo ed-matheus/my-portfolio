@@ -51,7 +51,7 @@ const Sobre = () => {
 				<div>
 					<h2 className="mb-4 text-2xl font-bold">Quem sou eu</h2>
 					<p className="text-md lg:text-lg leading-relaxed">
-						Meu nome completo é Edson Matheus de Jesus da Costa, tenho 22 anos
+						Meu nome completo é Edson Matheus de Jesus da Costa, tenho 23 anos
 						atualmente. Nascido em 11/06/2002, sempre fui curioso com tudo que
 						envolvia tecnologia desde pequeno. Essa curiosidade me levou ao
 						curso de <strong>Design de Mídias Digitais</strong> na Fatec
