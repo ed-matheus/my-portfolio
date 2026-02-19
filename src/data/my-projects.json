@@ -192,5 +192,20 @@
     "category": "Em Código",
     "link": "https://react-task-master-seven.vercel.app/",
     "codeLink": "https://github.com/ed-matheus/React-Task-Master"
+  },
+  {
+    "img": "type-racer.png",
+    "name": "Type Racer",
+    "desc": "Teste de digitação de alta performance com cálculo de WPM e precisão em tempo real. Desenvolvido com React e TypeScript, apresenta banco de frases temático, persistência de preferências e interface responsiva com Dark Mode nativo.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "TypeScript" },
+      { "id": 4, "name": "React" },
+      { "id": 5, "name": "Tailwind CSS" }
+    ],
+    "category": "Em Código",
+    "link": "https://type-racer-beta.vercel.app/",
+    "codeLink": "https://github.com/ed-matheus/type-racer"
   }
 ]
