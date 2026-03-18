@@ -1,89 +1,5 @@
 [
   {
-    "img": "tania.png",
-    "name": "Projeto Tânia Neves",
-    "desc": "Um e-commerce de suplementos, voltado à área da saúde e estética. Ao mesmo tempo, funciona como um 'currículo' para a cliente e conta com uma página de blog.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" },
-      { "id": 3, "name": "WooCommerce" }
-    ],
-    "category": "WordPress",
-    "link": "https://tanianeves.com.br/"
-  },
-  {
-    "img": "greengold.png",
-    "name": "Projeto Green Gold",
-    "desc": "Outra loja virtual para vendas de joias e pedras brutas. O site foi feito inteiramente do zero com o tema Hello do Elementor, da tela branca para como o site está hoje.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" },
-      { "id": 3, "name": "WooCommerce" }
-    ],
-    "category": "WordPress",
-    "link": "https://greengoldjoias.com.br/"
-  },
-  {
-    "img": "marmoraria.png",
-    "name": "Projeto Marmoraria Brilhante",
-    "desc": "Landing Page desenvolvida com WordPress para uma empresa que trabalha com confecção e instalação de mármores e pedras naturais.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" }
-    ],
-    "category": "WordPress",
-    "link": "https://marmorariabrilhante.com.br/"
-  },
-  {
-    "img": "questy.png",
-    "name": "Questy",
-    "desc": "Esse é um site institucional para uma empresa que trabalha com soluções em higiene ocupacional, com o nome de Questy.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" }
-    ],
-    "category": "WordPress",
-    "link": "https://questysolucoesho.com.br/"
-  },
-  {
-    "img": "karbonna.png",
-    "name": "Sociedade Karbonna LP",
-    "desc": "Landing Page completa para captação e conversão de leads, desenvolvida com WordPress para uma marca de design chamada Karbonna.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" },
-      { "id": 3, "name": "HTML" },
-      { "id": 4, "name": "CSS" }
-    ],
-    "category": "WordPress",
-    "link": "https://karbonna.com.br/sociedade-karbonna-pv/"
-  },
-  {
-    "img": "leopard-gs.png",
-    "name": "Leopard GS LP",
-    "desc": "Landing Page para captação de clientes para uma empresa de serviços gerais dos EUA, chamada Leopard General Services.",
-    "skills": [
-      { "id": 1, "name": "WordPress" },
-      { "id": 2, "name": "Elementor" },
-      { "id": 3, "name": "HTML" },
-      { "id": 4, "name": "CSS" }
-    ],
-    "category": "WordPress",
-    "link": "https://leopardgeneralservices.com/"
-  },
-  {
-    "img": "huddle.png",
-    "name": "Huddle Landing Page",
-    "desc": "Uma Landing Page / Página de captação que apresenta uma agência fictícia com o nome de Huddle. Desafio do Frontend Mentor.",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" }
-    ],
-    "category": "Em Código",
-    "link": "https://huddle-ed.netlify.app/",
-    "codeLink": "https://github.com/ed-matheus/huddle-landingpage"
-  },
-  {
     "img": "advice-friend.png",
     "name": "Advice Generator",
     "desc": "Aqui você pode encontrar um amigo que te dá conselhos aleatórios, todos eles vêm de uma API chamada 'AdviceSlip'. Foi um projeto que desenvolvi pelo Frontend Mentor.",
@@ -98,19 +14,6 @@
     "codeLink": "https://github.com/ed-matheus/react-advice-generator"
   },
   {
-    "img": "sunnyside.png",
-    "name": "Sunnyside Agency",
-    "desc": "Este se trata de uma Landing Page para uma agência de marketing digital fictícia, a Sunnyside Agency, também desenvolvido como desafio do Frontend Mentor.",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "JavaScript" }
-    ],
-    "category": "Em Código",
-    "link": "https://landingpage-sunnyside-ed.netlify.app/",
-    "codeLink": "https://github.com/ed-matheus/sunnyside-agency-landingpage"
-  },
-  {
     "img": "consulta-cep.png",
     "name": "Consulta CEP",
     "desc": "Uma aplicação Web que retorna dados do CEP que o usuário quiser consultar, vindos de uma API chamada ViaCEP.",
@@ -122,6 +25,46 @@
     ],
     "category": "Em Código",
     "codeLink": "https://github.com/ed-matheus/consulta-cep"
+  },
+  {
+    "img": "nimbus.png",
+    "name": "Nimbus Weather",
+    "desc": "Um app de clima com funcionalidades extras de previsão do tempo e pesquisa de cidades, com a API OpenWeather. Criado totalmente sem framework ou bibliotecas!",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" }
+    ],
+    "category": "Em Código",
+    "link": "https://ed-matheus.github.io/nimbus-weather/index.html",
+    "codeLink": "https://github.com/ed-matheus/nimbus-weather"
+  },
+  {
+    "img": "type-racer.png",
+    "name": "Type Racer",
+    "desc": "Teste de digitação de alta performance com cálculo de WPM e precisão em tempo real. Desenvolvido com React e TypeScript, apresenta banco de frases temático, persistência de preferências e interface responsiva com Dark Mode nativo.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "TypeScript" },
+      { "id": 4, "name": "React" },
+      { "id": 5, "name": "Tailwind CSS" }
+    ],
+    "category": "Em Código",
+    "link": "https://type-racer-beta.vercel.app/",
+    "codeLink": "https://github.com/ed-matheus/type-racer"
+  },
+  {
+    "img": "huddle.png",
+    "name": "Huddle Landing Page",
+    "desc": "Uma Landing Page / Página de captação que apresenta uma agência fictícia com o nome de Huddle. Desafio do Frontend Mentor.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" }
+    ],
+    "category": "Em Código",
+    "link": "https://huddle-ed.netlify.app/",
+    "codeLink": "https://github.com/ed-matheus/huddle-landingpage"
   },
   {
     "img": "news-homepage.png",
@@ -152,33 +95,6 @@
     "codeLink": "https://github.com/ed-matheus/next-browser-extensions-manager"
   },
   {
-    "img": "agendapp.png",
-    "name": "Projeto AgendApp",
-    "desc": "Projeto ainda em andamento. O objetivo é facilitar o trabalho de prestadores de serviços (barbeiros, manicures, psicólogos...) e de seus clientes, deixando os agendamentos mais práticos para ambos os lados.",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "TypeScript" },
-      { "id": 4, "name": "Next.js" },
-      { "id": 5, "name": "Tailwind CSS" }
-    ],
-    "category": "Em Código",
-    "codeLink": "https://github.com/ed-matheus/agenda-app"
-  },
-  {
-    "img": "nimbus.png",
-    "name": "Nimbus Weather",
-    "desc": "Um app de clima com funcionalidades extras de previsão do tempo e pesquisa de cidades, com a API OpenWeather. Criado totalmente sem framework ou bibliotecas!",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "JavaScript" }
-    ],
-    "category": "Em Código",
-    "link": "https://ed-matheus.github.io/nimbus-weather/index.html",
-    "codeLink": "https://github.com/ed-matheus/nimbus-weather"
-  },
-  {
     "img": "taskmaster.png",
     "name": "Task Master",
     "desc": "Lista de tarefas, mas com um diferencial: a lista de compras. Duas listas distintas mas dentro do mesmo app, com a possibilidade de dividir tarefas e deveres do dia de forma organizada.",
@@ -194,18 +110,52 @@
     "codeLink": "https://github.com/ed-matheus/React-Task-Master"
   },
   {
-    "img": "type-racer.png",
-    "name": "Type Racer",
-    "desc": "Teste de digitação de alta performance com cálculo de WPM e precisão em tempo real. Desenvolvido com React e TypeScript, apresenta banco de frases temático, persistência de preferências e interface responsiva com Dark Mode nativo.",
+    "img": "greengold.png",
+    "name": "Projeto Green Gold",
+    "desc": "Outra loja virtual para vendas de joias e pedras brutas. O site foi feito inteiramente do zero com o tema Hello do Elementor, da tela branca para como o site está hoje.",
     "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "TypeScript" },
-      { "id": 4, "name": "React" },
-      { "id": 5, "name": "Tailwind CSS" }
+      { "id": 1, "name": "WordPress" },
+      { "id": 2, "name": "Elementor" },
+      { "id": 3, "name": "WooCommerce" }
     ],
-    "category": "Em Código",
-    "link": "https://type-racer-beta.vercel.app/",
-    "codeLink": "https://github.com/ed-matheus/type-racer"
+    "category": "WordPress",
+    "link": "https://greengoldjoias.com.br/"
+  },
+  {
+    "img": "marmoraria.png",
+    "name": "Projeto Marmoraria Brilhante",
+    "desc": "Landing Page desenvolvida com WordPress para uma empresa que trabalha com confecção e instalação de mármores e pedras naturais.",
+    "skills": [
+      { "id": 1, "name": "WordPress" },
+      { "id": 2, "name": "Elementor" }
+    ],
+    "category": "WordPress",
+    "link": "https://marmorariabrilhante.com.br/"
+  },
+  {
+    "img": "karbonna.png",
+    "name": "Sociedade Karbonna LP",
+    "desc": "Landing Page completa para captação e conversão de leads, desenvolvida com WordPress para uma marca de design chamada Karbonna.",
+    "skills": [
+      { "id": 1, "name": "WordPress" },
+      { "id": 2, "name": "Elementor" },
+      { "id": 3, "name": "HTML" },
+      { "id": 4, "name": "CSS" }
+    ],
+    "category": "WordPress",
+    "link": "https://karbonna.com.br/sociedade-karbonna-pv/"
+  },
+  {
+    "img": "leopard-gs.png",
+    "name": "Leopard GS LP",
+    "desc": "Landing Page para captação de clientes para uma empresa de serviços gerais dos EUA, chamada Leopard General Services.",
+    "skills": [
+      { "id": 1, "name": "WordPress" },
+      { "id": 2, "name": "Elementor" },
+      { "id": 3, "name": "HTML" },
+      { "id": 4, "name": "CSS" }
+    ],
+    "category": "WordPress",
+    "link": "https://leopardgeneralservices.com/"
   }
 ]

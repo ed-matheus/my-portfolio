@@ -87,9 +87,9 @@ export default function Home() {
 					height={192}
 					animate={{ y: [0, -15, 0] }} // Move 15px para cima e volta
 					transition={{
-						duration: 4,      // Tempo de cada ciclo
+						duration: 4, // Tempo de cada ciclo
 						repeat: Number.POSITIVE_INFINITY, // Loop infinito
-						ease: "easeInOut" // Suaviza a aceleração
+						ease: "easeInOut", // Suaviza a aceleração
 					}}
 					// initial={{ opacity: 0, scale: 0.9 }}
 					// animate={{ opacity: 1, scale: 1 }}
@@ -106,15 +106,18 @@ export default function Home() {
 
 					<h3 className="mb-5 text-xl sm:text-2xl">
 						<Typewriter
-							words={['Desenvolvedor Web', 'Front-End Developer', 'Designer Digital']}
+							words={[
+								"Desenvolvedor Web",
+								"Front-End Developer",
+								"Designer Digital",
+							]}
 							loop={0}
 							cursor
-							cursorStyle='_'
+							cursorStyle="_"
 							typeSpeed={80}
 							deleteSpeed={50}
 							delaySpeed={1500}
 						/>
-						{/* Desenvolvedor Front-End e Designer Gráfico */}
 					</h3>
 
 					<p className="text-base sm:text-lg md:text-xl mb-5 text-gray-300">
@@ -161,8 +164,8 @@ export default function Home() {
 					animate={{ y: [0, 8, 0] }} // Move 8px para cima e volta
 					transition={{
 						duration: 2,
-						repeat: Number.POSITIVE_INFINITY, 
-						ease: "easeInOut" 
+						repeat: Number.POSITIVE_INFINITY,
+						ease: "easeInOut",
 					}}
 				>
 					<IoIosArrowDown size={25} />
@@ -294,7 +297,7 @@ export default function Home() {
 					className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-14 md:gap-20 lg:gap-15 w-full"
 					variants={fadeUp}
 				>
-					{projects.slice(0, 3).map((project) => (
+					{projects.slice(0, 4).map((project) => (
 						<ProjectCard
 							key={project.name}
 							name={project.name}
@@ -308,7 +311,7 @@ export default function Home() {
 				</motion.div>
 
 				<Link href="/projetos">
-					<Button text="Veja mais" />
+					<Button text="Ver mais projetos" />
 				</Link>
 			</motion.section>
 
