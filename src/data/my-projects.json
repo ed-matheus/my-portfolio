@@ -1,32 +1,5 @@
 [
   {
-    "img": "advice-friend.png",
-    "name": "Advice Generator",
-    "desc": "Aqui você pode encontrar um amigo que te dá conselhos aleatórios, todos eles vêm de uma API chamada 'AdviceSlip'. Foi um projeto que desenvolvi pelo Frontend Mentor.",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "React" },
-      { "id": 4, "name": "API" }
-    ],
-    "category": "Em Código",
-    "link": "https://advice-friend.netlify.app/",
-    "codeLink": "https://github.com/ed-matheus/react-advice-generator"
-  },
-  {
-    "img": "consulta-cep.png",
-    "name": "Consulta CEP",
-    "desc": "Uma aplicação Web que retorna dados do CEP que o usuário quiser consultar, vindos de uma API chamada ViaCEP.",
-    "skills": [
-      { "id": 1, "name": "HTML" },
-      { "id": 2, "name": "CSS" },
-      { "id": 3, "name": "JavaScript" },
-      { "id": 4, "name": "API" }
-    ],
-    "category": "Em Código",
-    "codeLink": "https://github.com/ed-matheus/consulta-cep"
-  },
-  {
     "img": "nimbus.png",
     "name": "Nimbus Weather",
     "desc": "Um app de clima com funcionalidades extras de previsão do tempo e pesquisa de cidades, com a API OpenWeather. Criado totalmente sem framework ou bibliotecas!",
@@ -53,6 +26,46 @@
     "category": "Em Código",
     "link": "https://type-racer-beta.vercel.app/",
     "codeLink": "https://github.com/ed-matheus/type-racer"
+  },
+  {
+    "img": "calc-js.png",
+    "name": "Calc JS",
+    "desc": "Calculadora minimalista com tema dark, construída com JavaScript puro, com lógica de precedência de operadores, cálculo de porcentagem e inversão de sinal.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" }
+    ],
+    "category": "Em Código",
+    "link": "https://calc-js-self.vercel.app/",
+    "codeLink": "https://github.com/ed-matheus/calc-js"
+  },
+  {
+    "img": "advice-friend.png",
+    "name": "Advice Generator",
+    "desc": "Aqui você pode encontrar um amigo que te dá conselhos aleatórios, todos eles vêm de uma API chamada 'AdviceSlip'. Foi um projeto que desenvolvi pelo Frontend Mentor.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "React" },
+      { "id": 4, "name": "API" }
+    ],
+    "category": "Em Código",
+    "link": "https://advice-friend.netlify.app/",
+    "codeLink": "https://github.com/ed-matheus/react-advice-generator"
+  },
+  {
+    "img": "consulta-cep.png",
+    "name": "Consulta CEP",
+    "desc": "Uma aplicação Web que retorna dados do CEP que o usuário quiser consultar, vindos de uma API chamada ViaCEP.",
+    "skills": [
+      { "id": 1, "name": "HTML" },
+      { "id": 2, "name": "CSS" },
+      { "id": 3, "name": "JavaScript" },
+      { "id": 4, "name": "API" }
+    ],
+    "category": "Em Código",
+    "codeLink": "https://github.com/ed-matheus/consulta-cep"
   },
   {
     "img": "huddle.png",
