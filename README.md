@@ -1,28 +1,28 @@
-# Portfólio — Edson Matheus 🚀
+# Portfolio — Edson Matheus 🚀
 
-Site pessoal e portfólio desenvolvido com Next.js, apresentando meus projetos, habilidades e formas de contato.
+Personal portfolio built with Next.js, showcasing my projects, skills and contact information.
 
 ![Portfolio Preview](./public/images/preview.png)
 
-## 🌐 Acesse o site
+## 🌐 Live Site
 
 [ed-matheus-portfolio.vercel.app →](https://ed-matheus-portfolio.vercel.app/)
 
-## ✨ Seções
+## ✨ Sections
 
-- **Home** — apresentação e destaques
-- **Sobre** — trajetória, formação e foco profissional
-- **Projetos** — projetos desenvolvidos com links para demo e repositório
-- **Contato** — formas de entrar em contato
+- **Home** — introduction and highlights
+- **About** — background, education and professional focus
+- **Projects** — projects with links to live demo and repository
+- **Contact** — ways to get in touch
 
-## 🛠️ Tecnologias
+## 🛠️ Built With
 
 - Next.js
 - React
 - Tailwind CSS
 - JavaScript
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 my-portfolio/
@@ -39,4 +39,4 @@ my-portfolio/
 
 ---
 
-Desenvolvido com 💙 por [Edson Matheus](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
+Developed with 💙 by [Edson Matheus](https://www.linkedin.com/in/edson-matheus-b5a0171ba/)
